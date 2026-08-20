@@ -37,6 +37,7 @@
 
 ### 📝 02 — Projeto de Pesquisa
 - [**UN 01 — instruções da Atividade 1**](02-Projeto-de-Pesquisa/UN01_instrucoes.md) ⏰ *entrega até 21.08*
+- [**UN 02 — instruções da Atividade 2**](02-Projeto-de-Pesquisa/UN02_instrucoes.md) *entrega até 05.09 — cumulativa, inclui o TR.1*
 - [**Estrutura do projeto**](02-Projeto-de-Pesquisa/estrutura-do-projeto.md) — sumário, mapa unidade→seção, modelos ABNT, cronograma
 
 ### 🎓 03 — Projeto Final
@@ -62,6 +63,8 @@ Nota 2 — o **paper**. Obrigatório para concluir a disciplina **e o curso**. *
 | 22.10 – 27.11 | **Entrega do Projeto Final** | Paper | 4,0 |
 
 **Disciplina vale 10 pts · média mínima 7 · máximo 5 faltas (de 20 aulas).**
+
+> **As entregas são cumulativas.** Cada TR reabre o mesmo arquivo e acrescenta uma seção — o enunciado da UN 02 pede para "personalizar e incluir as informações do TR.1".
 
 ### Regras de entrega (valem para todas as unidades)
 Arial 12 · espaço 1,5 · texto justificado · **arquivo PDF** · enviado pelo Moodle.
