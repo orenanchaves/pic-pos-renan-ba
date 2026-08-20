@@ -45,6 +45,11 @@
     --t-sage:     #C7D2C9;
     --t-bone:     #E1DED2;
     --t-pale:     #DCDED6;
+    /* progressao das unidades 2 -> entrega */
+    --s1:         #E3E0D4;
+    --s2:         #D9DACE;
+    --s3:         #CDD4CB;
+    --s4:         #BECCC3;
 
     /* semânticos */
     --live:       #16513F;
@@ -70,6 +75,7 @@
       --t-sign:#3B63E8; --t-sign-ink:#F2F4FF;
       --t-deep:#0B1216; --t-deep-ink:#DDE5E8;
       --t-sage:#26362E; --t-bone:#2A2A24; --t-pale:#232A2C;
+      --s1:#232620; --s2:#242C27; --s3:#26332C; --s4:#283A31;
       --live:#4FC79B; --live-soft:#123026;
       --warn:#DDAE68; --warn-soft:#2A2214;
       --accent:#8FAAF5; --accent-soft:#161F3C;
@@ -82,6 +88,7 @@
     --t-sign:#3B63E8; --t-sign-ink:#F2F4FF;
     --t-deep:#0B1216; --t-deep-ink:#DDE5E8;
     --t-sage:#26362E; --t-bone:#2A2A24; --t-pale:#232A2C;
+    --s1:#232620; --s2:#242C27; --s3:#26332C; --s4:#283A31;
     --live:#4FC79B; --live-soft:#123026;
     --warn:#DDAE68; --warn-soft:#2A2214;
     --accent:#8FAAF5; --accent-soft:#161F3C;
@@ -106,11 +113,13 @@
   /* ============ estrutura ============ */
   .shell {
     display: grid;
-    grid-template-columns: 268px 1fr;
+    grid-template-columns: 268px minmax(0, 1fr);
     gap: var(--gap);
     padding: var(--gap);
     min-height: 100vh;
   }
+  .shell > main { min-width: 0; }
+  .sheet, .panel, .reader { min-width: 0; }
 
   /* ---- coluna fixa ---- */
   .rail {
@@ -171,6 +180,10 @@
   .tile.deep  { background: var(--t-deep); color: var(--t-deep-ink); }
   .tile.sage  { background: var(--t-sage); }
   .tile.bone  { background: var(--t-bone); }
+  .tile.s1 { background: var(--s1); }
+  .tile.s2 { background: var(--s2); }
+  .tile.s3 { background: var(--s3); }
+  .tile.s4 { background: var(--s4); }
 
   .a-now   { grid-column: span 2; grid-row: span 2; }
   .a-wide  { grid-column: span 2; }
@@ -193,6 +206,7 @@
   .sec-head h2 { font-size: clamp(1.25rem, 2.6vw, 1.6rem); line-height: 1.15; letter-spacing: -0.012em; }
 
   /* ---- componentes internos ---- */
+  .meta, .grade, .shelf, .outline, .specs, .who, .axes { max-width: 100%; }
   .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
   .meta div { background: var(--card); padding: 13px 15px; display: flex; flex-direction: column; gap: 3px; }
   .meta dt { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
@@ -200,7 +214,8 @@
   .meta div.hot { background: var(--live-soft); }
   .meta div.hot dd { color: var(--live); }
 
-  .split { display: grid; grid-template-columns: 1.15fr 1fr; gap: 30px; align-items: start; }
+  .split { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 30px; align-items: start; }
+  .split > * { min-width: 0; }
   .stack { display: flex; flex-direction: column; gap: 14px; }
 
   .outline { border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
@@ -430,7 +445,7 @@
         </div>
       </button>
 
-      <button class="tile" type="button" data-go="t-un2">
+      <button class="tile s1" type="button" data-go="t-un2">
         <div class="tile-top">
           <span class="tile-tag">Unidade 2</span>
           <span class="tile-when">05.09</span>
@@ -438,7 +453,7 @@
         <div><div class="tile-label">Problema</div></div>
       </button>
 
-      <button class="tile" type="button" data-go="t-un3">
+      <button class="tile s2" type="button" data-go="t-un3">
         <div class="tile-top">
           <span class="tile-tag">Unidade 3</span>
           <span class="tile-when">20.09</span>
@@ -446,7 +461,7 @@
         <div><div class="tile-label">Referencial</div></div>
       </button>
 
-      <button class="tile" type="button" data-go="t-un4">
+      <button class="tile s3" type="button" data-go="t-un4">
         <div class="tile-top">
           <span class="tile-tag">Unidade 4</span>
           <span class="tile-when">06.10</span>
@@ -454,7 +469,7 @@
         <div><div class="tile-label">Metodologia</div></div>
       </button>
 
-      <button class="tile bone" type="button" data-go="t-entrega">
+      <button class="tile s4" type="button" data-go="t-entrega">
         <div class="tile-top">
           <span class="tile-tag">Quinta etapa</span>
           <span class="tile-when">21.10</span>
@@ -1225,8 +1240,10 @@
 
   /* contagem regressiva até a UN 01 */
   (function () {
-    var alvo = new Date(2026, 7, 21, 23, 59, 59);
-    var dias = Math.ceil((alvo - new Date()) / 86400000);
+    var hoje = new Date();
+    var d0 = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate());
+    var alvo = new Date(2026, 7, 21);
+    var dias = Math.round((alvo - d0) / 86400000);
     var el = document.getElementById('railCount');
     if (!el) return;
     if (dias > 1) el.textContent = dias + ' dias';
