@@ -1,0 +1,22 @@
+# Gravações dos encontros — arquivos grandes e material institucional
+01-Encontros/**/*.webm
+01-Encontros/**/*.mp4
+
+# Material didático da Belas Artes — conteúdo de terceiros, não republicar
+05-Conteudo-da-Disciplina/
+
+# Normas ABNT e textos de terceiros — material licenciado
+04-Referencias/*.pdf
+04-Referencias/*.docx
+02-Projeto-de-Pesquisa/*.docx
+00-Central/*.pdf
+00-Central/*.png
+
+# Sistema
+Thumbs.db
+desktop.ini
+~$*
+
+# Documentos da instituição na raiz
+/*.docx
+/*.pdf
