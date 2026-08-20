@@ -184,6 +184,8 @@
   .link:last-child { padding-bottom: 0; }
   .link::before { content: ""; position: absolute; left: -6px; top: 7px; width: 10px; height: 10px; background: var(--ground); border: 2px solid var(--rule-strong); }
   .link.open::before { border-color: var(--live); background: var(--live); }
+  .link.done::before { border-color: var(--accent); background: var(--accent); }
+  .link.done .a { color: var(--accent); font-weight: 600; }
   .link .q { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-3); }
   .link .a { font-family: var(--serif); font-size: 1.05rem; }
   .link .note { font-size: 0.9rem; color: var(--ink-2); }
@@ -337,7 +339,7 @@
     <div class="tile">
       <div class="label">Próximo encontro</div>
       <div class="value">24.08</div>
-      <div class="sub">segunda, 19h — plantão nº 2</div>
+      <div class="sub">segunda, 19h — problema e objetivos</div>
     </div>
     <div class="tile act">
       <button class="btn" id="openCal" type="button">Abrir calendário</button>
@@ -428,24 +430,22 @@
     <div class="sec-head">
       <div class="eyebrow">O que precisa ser decidido</div>
       <h2>Da área ao problema</h2>
-      <p class="lede">O material da disciplina insiste num ponto: <strong>tema não é objetivo</strong>. Tema é a área onde a pesquisa se instala; dentro dela ainda falta o recorte. É essa cadeia que precisa fechar — e o primeiro elo vence dia 21.</p>
+      <p class="lede">“Afunilar” foi a palavra mais repetida no primeiro encontro. O tema já tem área, assunto e recorte — falta a pergunta. O que a UN 01 pede são <strong>5 a 15 linhas</strong> descrevendo o objeto e as questões que o delimitam: temporalidade, território, dimensões sociais, culturais e econômicas.</p>
     </div>
     <div class="split">
       <div class="chain">
-        <div class="link open">
+        <div class="link done">
           <span class="q">Área</span>
-          <span class="a">Em que campo a pesquisa se instala?</span>
-          <span class="note">Exemplo do material: “Design”.</span>
+          <span class="a">Branding e marketing de luxo</span>
         </div>
-        <div class="link open">
+        <div class="link done">
           <span class="q">Tema · UN 01</span>
-          <span class="a">Qual o assunto dentro dessa área?</span>
-          <span class="note">“Design de superfície.”</span>
+          <span class="a">Hotelaria de luxo no Brasil</span>
         </div>
-        <div class="link open">
+        <div class="link done">
           <span class="q">Recorte</span>
-          <span class="a">Qual objeto, exatamente?</span>
-          <span class="note">“Mas qual superfície?” — a pergunta que o próprio material deixa em aberto.</span>
+          <span class="a">Hotéis com 2 e 3 Chaves Michelin — quatro deles</span>
+          <span class="note">Aceito pelo professor como bom afunilamento. Quatro é o teto: “não fuja desses quatro”.</span>
         </div>
         <div class="link">
           <span class="q">Problema · UN 02</span>
@@ -468,16 +468,20 @@
       </div>
       <div style="display:flex; flex-direction:column; gap:20px;">
         <div>
-          <div class="eyebrow" style="margin-bottom:10px">Critérios que o material sugere</div>
-          <p style="font-size:0.95rem; color:var(--ink-2);">Um tema com que você se sinta à vontade — vai conviver com ele por meses. Que acrescente algo ao que já foi discutido, não que repita. E sobre o qual já exista literatura para ler antes de escrever.</p>
+          <div class="eyebrow" style="margin-bottom:10px">O que dá nota nesta etapa</div>
+          <p style="font-size:0.95rem; color:var(--ink-2);">Nada, na prática — o professor adiantou que <strong>todos recebem 1,0 na UN 01</strong>, porque não existe tema errado, só tema a afunilar. O que vale é o feedback: ele dirá se o recorte ainda está largo. Zera apenas quem basear o tema em inverdades.</p>
         </div>
         <div>
           <div class="eyebrow" style="margin-bottom:10px">Onde procurar</div>
           <p style="font-size:0.95rem; color:var(--ink-2);">EBSCO Host · SciELO · Latindex · Periódicos Capes · biblioteca da Belas Artes.</p>
         </div>
         <div class="flag">
-          <div class="t">Ponto de partida da conversa</div>
-          <p>Nada disso está definido ainda. É por aqui que vale começar — a decisão de tema condiciona todas as outras cinco entregas.</p>
+          <div class="t">Onde a conversa continua</div>
+          <p>Os três primeiros elos estão fechados. Falta o <strong>problema</strong> — uma pergunta que os quatro hotéis, juntos, permitam responder e que nenhum deles sozinho responderia. É a UN 02, explicada no encontro de 24.08.</p>
+        </div>
+        <div class="flag">
+          <div class="t">Modelo já indicado</div>
+          <p>Com quatro objetos, estudo de caso está descartado — ele comporta um, no máximo dois. O professor apontou <strong>artigo científico</strong> como formato do projeto final.</p>
         </div>
       </div>
     </div>
@@ -620,8 +624,34 @@
     </div>
     <div class="flags">
       <div class="flag">
-        <div class="t">Duas divergências a confirmar com o tutor</div>
-        <p>O rodapé do calendário diz que a média é “a soma da N1 + N2 dividido por 5”, o que não fecha com o quadro (6 + 4 = 10, mínimo 7). E o plano de ensino 2024.2 traz os pesos invertidos: projeto de pesquisa 4 pts, trabalho final 6 pts.</p>
+        <div class="t">Frequência não é presença</div>
+        <p>Os encontros <strong>não contam falta</strong>. A frequência vem só das entregas — UN 01 vale 4, UN 02 vale 3, UN 03 vale 4, UN 04 vale 3, e a entrega do projeto vale 6, num total de 20 com limite de 5 faltas. Ou seja: dá para perder <strong>uma única</strong> das quatro unidades, a entrega do projeto de pesquisa não pode cair, e não há segunda chamada.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="eyebrow">Unidade 6 · a escolha que vem depois</div>
+      <h2>Sete modelos para o projeto final</h2>
+      <p class="lede">A estrutura do projeto de pesquisa é a mesma para todos os cursos. Já o projeto final cada um escolhe — e a escolha depende do tamanho do recorte e de haver ou não entrega prática.</p>
+    </div>
+    <div class="outline">
+      <div class="out-row lvl1"><span class="out-n">6–10</span><span class="out-t">PAPER</span><span class="owner">com prática</span></div>
+      <div class="out-row lvl2"><span class="out-n"></span><span class="out-t">Mais objetivo. Indicado para quem entrega campanha, filme ou animação — o texto sustenta a prática</span><span></span></div>
+      <div class="out-row lvl1"><span class="out-n">15–20</span><span class="out-t">ARTIGO CIENTÍFICO</span><span class="owner now">indicado</span></div>
+      <div class="out-row lvl2"><span class="out-n"></span><span class="out-t">Mais fôlego: mais autores, mais referências, recorte que comporta vários objetos</span><span></span></div>
+      <div class="out-row lvl1"><span class="out-n">15–20</span><span class="out-t">ESTUDO DE CASO</span><span class="owner">1 objeto</span></div>
+      <div class="out-row lvl2"><span class="out-n"></span><span class="out-t">Muito específico — um objeto, no máximo dois em comparação</span><span></span></div>
+      <div class="out-row lvl1"><span class="out-n">15–20</span><span class="out-t">PROJETO AUTORAL / ARTÍSTICO</span><span></span></div>
+      <div class="out-row lvl1"><span class="out-n">15–20</span><span class="out-t">PROJETO TÉCNICO</span><span></span></div>
+      <div class="out-row lvl1"><span class="out-n">15–20</span><span class="out-t">ESTUDO DE VIABILIDADE</span><span></span></div>
+      <div class="out-row lvl1"><span class="out-n">15–20</span><span class="out-t">DESENVOLVIMENTO DE SETOR, EMPRESA, PRODUTO OU SERVIÇO</span><span></span></div>
+    </div>
+    <div class="flags">
+      <div class="flag">
+        <div class="t">Prática nunca vem sozinha</div>
+        <p>Pode entregar só texto. Não pode entregar só prática. Havendo campanha, filme ou curadoria, o texto obrigatório descreve e fundamenta o processo — e as duas correm em paralelo, com a prática entregue apenas no final. Não há apresentação nem banca.</p>
       </div>
     </div>
   </section>
@@ -649,8 +679,8 @@
       </div>
       <div class="shelf-item">
         <div class="n">1</div>
-        <div class="k">Gravação</div>
-        <div class="d">1º encontro, 18.08 — 1h45, webcam e tela</div>
+        <div class="k">Gravação transcrita</div>
+        <div class="d">1º encontro, 18.08 — 1h45 de webcam, tela e texto</div>
       </div>
       <div class="shelf-item">
         <div class="n">2</div>
