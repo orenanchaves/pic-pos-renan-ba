@@ -20,3 +20,6 @@ desktop.ini
 # Documentos da instituição na raiz
 /*.docx
 /*.pdf
+
+# Transcrições das gravações — fala dos professores e alunos, não publicar
+01-Encontros/**/*.txt

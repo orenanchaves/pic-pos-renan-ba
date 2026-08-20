@@ -3,6 +3,10 @@
 
 > Central de informações do projeto. Tudo o que chega — avisos, calendários, gravações, materiais — entra aqui.
 
+**📍 Mapa visual: https://orenanchaves.github.io/pic-pos-renan-ba/**
+
+*O material didático da Belas Artes, as normas ABNT e as gravações ficam apenas na pasta local — não são publicados aqui por serem conteúdo de terceiros.*
+
 ---
 
 ## Estado atual
