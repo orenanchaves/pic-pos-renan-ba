@@ -1,7 +1,7 @@
 # Tema — UN 01
 
 **Entrega: 21.08.2026 · Documento pronto:** `PIC-Pos_UN01_Tema_Renan-Vieira-Chaves.docx`
-Renan Vieira Chaves · Pós-graduação em Branding e Marketing de Luxo
+Renan Vieira Chaves · Pós-graduação em **Design Digital e Novas Mídias**
 
 > ⚠️ **O tema mudou.** A primeira formulação (hotéis de luxo com Chaves Michelin, discutida
 > com o professor no encontro de 18.08) foi substituída. O registro daquela conversa continua
@@ -14,14 +14,14 @@ Renan Vieira Chaves · Pós-graduação em Branding e Marketing de Luxo
 
 | Camada | Definição |
 |---|---|
-| **Área** | Branding e marketing de luxo |
+| **Área** | Design Digital e Novas Mídias |
 | **Objeto** | A **sobrecarga informacional no planejamento de viagens** no ambiente digital |
-| **Ângulo** | Branding e experiência do consumidor |
+| **Ângulo** | Design digital e experiência do usuário |
 | **Recorte** | Quatro marcas do mercado brasileiro, ordenadas pelo **grau de mediação** que oferecem |
 | **Território** | Brasil |
 | **Temporalidade** | Reconfiguração recente do consumo de viagens — digitalização das reservas e chegada de agentes conversacionais e IA ao setor |
-| **Eixos de análise** | Posicionamento de marca · grau de mediação da jornada · carga informacional imposta ao consumidor · comunicação |
-| **Tese implícita** | A mediação da sobrecarga se converte em valor de marca |
+| **Eixos de análise** | Arquitetura da informação · grau de mediação da jornada · carga cognitiva imposta ao usuário · linguagem de interface |
+| **Tese implícita** | A mediação da sobrecarga se converte em proposta de valor |
 
 ## Os quatro casos, como um espectro
 
@@ -66,15 +66,11 @@ delimitam um clima, não um período. Foi justamente sobre isso que ele insistiu
 tempo que vocês vão analisar o objeto de estudo de vocês?"* — no exemplo dele, "o Oiticica de
 68 a 69". Um intervalo em anos resolveria.
 
-**3. O vínculo com a pós de luxo.** Google Travel, Decolar e CVC são marcas de massa. A ponte
-com branding de luxo existe — está em *"a curadoria como código de distinção"* e na Teresa
-Perez —, mas fica em uma oração subordinada. Vale reforçá-la.
-
-> Precedente útil: no mesmo encontro, uma aluna perguntou se precisava explicitar mais a
-> ligação entre seu tema (história da arte) e sua pós (design emocional). A resposta do
-> professor foi que **trazer os autores da sua área e traçar o paralelo já resolve** — que
-> a conexão pode ficar nas entrelinhas, desde que a bibliografia a sustente. Isso empurra a
-> solução para o referencial teórico (UN 03), não para o tema.
+**3. Encaixe com o curso — resolvido.** Sobrecarga informacional, arquitetura da informação,
+agentes conversacionais e mediação por interface caem no centro de **Design Digital e Novas
+Mídias**. O critério que o professor cobrou — que o tema seja correlato à pós — está atendido
+sem esforço. A lente do parágrafo foi ajustada de *branding e experiência do consumidor* para
+*design digital e experiência do usuário*.
 
 ---
 
@@ -84,13 +80,12 @@ Perez —, mas fica em uma oração subordinada. Vale reforçá-la.
 Na UN 02 vale escolher um como conceito-guia e ancorá-lo em autor — o *paradoxo da escolha*
 (Schwartz) é a porta de entrada mais óbvia, e a economia da atenção sustenta o resto.
 
-**Trocar a CVC.** A observação é sua e é boa: substituir a CVC por um concierge premium
-deixaria o espectro inteiro mais próximo do luxo. O custo é perder o contraste com o varejo
-de massa, que hoje é o que torna a escala legível. Não precisa decidir agora — o tema pode
-mudar até 21.10.
+**Composição do espectro.** Hoje a escala vai de interface totalmente automatizada
+(Google Travel) a curadoria humana (Teresa Perez), com Decolar e CVC no meio. Trocar um dos
+intermediários muda o que a escala mede. Não precisa decidir agora — o tema pode mudar até 21.10.
 
-**Título.** O documento entra com um título provisório —
-*A mediação da sobrecarga informacional como valor de marca* — porque a capa exige um. O
+**Título.** O documento entra com um título provisório — *Da sobrecarga à curadoria: a mediação
+digital da jornada de planejamento de viagens no mercado brasileiro* — porque a capa exige um. O
 professor foi explícito: **o título se define no fim do semestre**. Trocar depois é esperado.
 
 ---
@@ -109,13 +104,13 @@ professor foi explícito: **o título se define no fim do semestre**. Trocar dep
 
 **Falta preencher:** o **RA**, marcado como `RA: ____________` na capa e na folha de rosto.
 
-**Confirmar:** o nome oficial do curso na capa está como *Pós-Graduação em Branding e
-Marketing de Luxo*. Se a nomenclatura oficial for outra, ajustar nos dois lugares.
+**Confirmar:** o curso na capa está como *Pós-Graduação em Design Digital e Novas Mídias*.
+Se a nomenclatura oficial trouxer alguma variação, ajustar na capa e na folha de rosto.
 
 ## Antes de enviar
 
 - [ ] Preencher o RA (capa e folha de rosto)
-- [ ] Conferir o nome oficial do curso
+- [ ] Conferir a grafia oficial do nome do curso
 - [ ] Decidir se apara o parágrafo para caber em 15 linhas
 - [ ] Apagar os marcadores `[Unidade 2 — ...]` se preferir entregar só com o tema
 - [ ] Exportar em PDF
