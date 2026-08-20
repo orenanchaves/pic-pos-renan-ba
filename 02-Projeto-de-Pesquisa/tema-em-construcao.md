@@ -1,73 +1,122 @@
-# Tema em construção — UN 01
+# Tema — UN 01
 
-**Entrega: 21.08.2026 · 5 a 15 linhas · PDF pelo Moodle**
-Pós-graduação em **Branding e Marketing de Luxo**
+**Entrega: 21.08.2026 · Documento pronto:** `PIC-Pos_UN01_Tema_Renan-Vieira-Chaves.docx`
+Renan Vieira Chaves · Pós-graduação em Branding e Marketing de Luxo
+
+> ⚠️ **O tema mudou.** A primeira formulação (hotéis de luxo com Chaves Michelin, discutida
+> com o professor no encontro de 18.08) foi substituída. O registro daquela conversa continua
+> em [notas.md](../01-Encontros/01_2026-08-18_Encontro-1/notas.md) — parte do que ele disse
+> lá segue valendo, parte não. Ver "O que ainda se aplica", abaixo.
 
 ---
 
 ## Onde o tema está
 
-| Camada | Estado |
+| Camada | Definição |
 |---|---|
 | **Área** | Branding e marketing de luxo |
-| **Tema** | Hotelaria de luxo no Brasil |
-| **Recorte proposto** | Hotéis com **2 e 3 Chaves Michelin** |
-| **Objetos** | **Quatro hotéis**, todos com hospedagem própria — experiência vivida |
-| **Ângulo** | Análise da experiência de hóspede; leitura de marca a partir dela |
-| **Modelo provável do projeto final** | **Artigo científico** (15–20 páginas) — indicado pelo professor |
+| **Objeto** | A **sobrecarga informacional no planejamento de viagens** no ambiente digital |
+| **Ângulo** | Branding e experiência do consumidor |
+| **Recorte** | Quatro marcas do mercado brasileiro, ordenadas pelo **grau de mediação** que oferecem |
+| **Território** | Brasil |
+| **Temporalidade** | Reconfiguração recente do consumo de viagens — digitalização das reservas e chegada de agentes conversacionais e IA ao setor |
+| **Eixos de análise** | Posicionamento de marca · grau de mediação da jornada · carga informacional imposta ao consumidor · comunicação |
+| **Tese implícita** | A mediação da sobrecarga se converte em valor de marca |
+
+## Os quatro casos, como um espectro
+
+Esta é a maior força da formulação: os casos não são quatro exemplos paralelos, são
+**quatro posições numa mesma escala**.
+
+| Marca | O que faz com a sobrecarga |
+|---|---|
+| **Google Travel** | Transfere integralmente ao viajante |
+| **Decolar** | Organiza — mais autosserviço |
+| **CVC** | Organiza — mais mediação humana |
+| **Teresa Perez Tours** | Suprime, por curadoria personalizada |
 
 ---
 
-## O que o professor validou e o que ressalvou
+## O que ainda se aplica do que o professor disse
 
-✅ **O recorte por Chaves Michelin funciona.** Fecha Brasil, delimita um segmento e já carrega contexto econômico e cultural. Foi aceito como bom afunilamento.
+✅ **Quatro casos continua sendo o teto.** *"Não fuja desses quatro."* A restrição era de
+tamanho — quatro objetos em 15 a 20 páginas — e vale para qualquer tema.
 
-✅ **Nomear os quatro hotéis já na entrega do tema.** Ele pediu isso explicitamente: detalhar o contexto Michelin e dizer quais são os quatro. Com isso ele avalia no feedback se ainda falta afunilar.
+✅ **Estudo de caso segue descartado.** Comporta um objeto, no máximo dois. Com quatro, o
+formato final é **artigo científico**.
 
-⚠️ **Estudo de caso está descartado.** O modelo comporta um objeto, no máximo dois em comparação. Quatro exemplos o estouram.
+✅ **A lógica do afunilamento.** Ele pediu temporalidade, território, e as questões sociais,
+culturais e econômicas que cercam o objeto. O texto atual entrega os três.
 
-⚠️ **Quatro exemplos é o teto.** *"Não fuja desses quatro."* A preocupação é caber no número de páginas — quatro objetos analisados em 15 a 20 páginas dá cerca de 3 a 4 páginas por hotel, contando fundamentação teórica e conclusão.
+✅ **Nomear os casos na entrega do tema.** Está feito.
 
-💡 **Publicação como horizonte.** Ele sugeriu que, mesmo sendo um trabalho de mercado, a escrita acadêmica permitiria transformá-lo depois em artigo para congresso do setor hoteleiro.
-
----
-
-## O que ainda falta decidir
-
-Nenhuma destas precisa estar resolvida na UN 01, mas todas aparecem na UN 02:
-
-**Temporalidade.** As hospedagens foram quando? O Guia Michelin no Brasil tem história recente — vale ancorar o recorte no ano de atribuição das chaves.
-
-**O que exatamente se analisa.** "Experiência" é amplo. Que dimensões? Atendimento, arquitetura e ambiência, gastronomia, identidade de marca, comunicação, precificação? Escolher três ou quatro eixos e aplicá-los igualmente aos quatro hotéis dá estrutura comparativa — e é o que sustenta uma análise em vez de quatro relatos.
-
-**A posição do "eu".** A experiência é pessoal, mas a ABNT não permite primeira pessoa do singular. O relato precisa virar observação sistematizada, o que empurra para uma metodologia declarada — observação participante, por exemplo.
-
-**Se entra parte prática.** Você poderia parar no texto analítico ou desdobrar numa entrega prática (diagnóstico de marca, recomendação para um dos hotéis). Não é obrigatório e o professor não cobrou.
-
-**O problema.** Ainda não formulado. É a UN 02 e é o elo que falta: uma pergunta que os quatro hotéis, juntos, permitam responder e que nenhum deles sozinho responderia.
+❌ **Não se aplica mais:** tudo o que era específico dos hotéis e das Chaves Michelin.
 
 ---
 
-## Rascunho para a entrega da UN 01
+## Três pontos frágeis, na ordem em que provavelmente aparecerão no feedback
 
-Estrutura possível para o parágrafo, seguindo o que ele pediu — objeto, recorte, contexto, afunilamento:
+**1. Extensão.** O parágrafo tem 1.516 caracteres, o que dá **16 a 18 linhas** em Arial 12
+com entrelinha 1,5 e margens ABNT. O professor pediu **5 a 15**. Está pouco acima. Não deve
+custar nota — ele adiantou que todos recebem 1,0 nesta etapa —, mas é o tipo de coisa que
+volta como observação.
 
-1. O tema: hotelaria de luxo no Brasil sob a ótica de branding
-2. O recorte: hotéis distinguidos com 2 e 3 Chaves Michelin
-3. Os objetos: os quatro hotéis, nomeados
-4. Por que esses: o que a distinção Michelin delimita como segmento
-5. As questões que afunilam: temporalidade, território, dimensões da experiência analisadas
-6. O que a análise pretende observar
+**2. Temporalidade sem datas.** "Reconfiguração recente" e "chegada de agentes conversacionais"
+delimitam um clima, não um período. Foi justamente sobre isso que ele insistiu: *"qual é o
+tempo que vocês vão analisar o objeto de estudo de vocês?"* — no exemplo dele, "o Oiticica de
+68 a 69". Um intervalo em anos resolveria.
 
-Lembretes de forma: Arial 12, espaço 1,5, justificado, PDF, sem primeira pessoa do singular, sobre o template oficial (com capa e folha de rosto), ano da capa atualizado para 2026.
+**3. O vínculo com a pós de luxo.** Google Travel, Decolar e CVC são marcas de massa. A ponte
+com branding de luxo existe — está em *"a curadoria como código de distinção"* e na Teresa
+Perez —, mas fica em uma oração subordinada. Vale reforçá-la.
+
+> Precedente útil: no mesmo encontro, uma aluna perguntou se precisava explicitar mais a
+> ligação entre seu tema (história da arte) e sua pós (design emocional). A resposta do
+> professor foi que **trazer os autores da sua área e traçar o paralelo já resolve** — que
+> a conexão pode ficar nas entrelinhas, desde que a bibliografia a sustente. Isso empurra a
+> solução para o referencial teórico (UN 03), não para o tema.
 
 ---
 
-## Próximos passos
+## Decisões que ficaram abertas
 
-- [ ] Escrever o parágrafo do tema (5–15 linhas)
-- [ ] Nomear os quatro hotéis e o ano das chaves
-- [ ] Formatar sobre o template `Estrutura do Projeto de Pesquisa 2025-1`, capa em 2026
-- [ ] Exportar PDF e enviar **até 21.08**
-- [ ] Aguardar o feedback antes de mexer nas outras ideias
-- [ ] Levar ao 2º encontro (24.08) as dúvidas sobre problema e objetivos
+**Como nomear o fenômeno.** "Sobrecarga informacional" e "fadiga decisória" convivem no texto.
+Na UN 02 vale escolher um como conceito-guia e ancorá-lo em autor — o *paradoxo da escolha*
+(Schwartz) é a porta de entrada mais óbvia, e a economia da atenção sustenta o resto.
+
+**Trocar a CVC.** A observação é sua e é boa: substituir a CVC por um concierge premium
+deixaria o espectro inteiro mais próximo do luxo. O custo é perder o contraste com o varejo
+de massa, que hoje é o que torna a escala legível. Não precisa decidir agora — o tema pode
+mudar até 21.10.
+
+**Título.** O documento entra com um título provisório —
+*A mediação da sobrecarga informacional como valor de marca* — porque a capa exige um. O
+professor foi explícito: **o título se define no fim do semestre**. Trocar depois é esperado.
+
+---
+
+## O documento
+
+`PIC-Pos_UN01_Tema_Renan-Vieira-Chaves.docx` já vem com:
+
+- Capa e folha de rosto no padrão do template oficial, ano 2026
+- Nota de apresentação com o nome da Profa. Dra. Leila Rabello de Oliveira
+- Sumário com a estrutura completa da NBR 15287
+- Seção **1.2 Tema do projeto** preenchida
+- Seções 1.3 a 5 com marcação da unidade em que cada uma será escrita
+- Arial 12 · entrelinha 1,5 · justificado · recuo de parágrafo 1,25 cm
+- Margens ABNT: superior e esquerda 3 cm, inferior e direita 2 cm
+
+**Falta preencher:** o **RA**, marcado como `RA: ____________` na capa e na folha de rosto.
+
+**Confirmar:** o nome oficial do curso na capa está como *Pós-Graduação em Branding e
+Marketing de Luxo*. Se a nomenclatura oficial for outra, ajustar nos dois lugares.
+
+## Antes de enviar
+
+- [ ] Preencher o RA (capa e folha de rosto)
+- [ ] Conferir o nome oficial do curso
+- [ ] Decidir se apara o parágrafo para caber em 15 linhas
+- [ ] Apagar os marcadores `[Unidade 2 — ...]` se preferir entregar só com o tema
+- [ ] Exportar em PDF
+- [ ] Moodle → Unidade 1 → Atividade 1 → Adicionar envio → Salvar e enviar
