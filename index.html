@@ -26,390 +26,533 @@
   }
 
   :root {
-    --ground:#F5F8F7; --surface:#FFFFFF; --surface-2:#E9EFEE;
-    --ink:#0E1D26; --ink-2:#40565F; --ink-3:#728891;
-    --rule:#D2DEDB; --rule-strong:#B4C4C0;
-    --accent:#123F73; --accent-soft:#E1EAF4;
-    --live:#0A6E4C; --live-soft:#DCEFE6;
-    --warn:#855410; --warn-soft:#F6EBD6;
-    --ph2:#DEE9F4; --ph3:#C7D9ED; --ph4:#AEC7E4; --ph5:#8DB2D9;
-    --ph6:#123F73; --ph6-ink:#F5F8F7;
-    --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
-    --sans:"Public Sans", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
-    --measure:68ch; --page:1120px;
+    /* neutros */
+    --paper:      #EEEEE9;
+    --card:       #FFFFFF;
+    --ink:        #14181A;
+    --ink-2:      #4A5559;
+    --ink-3:      #7C8A8E;
+    --rule:       #D8D8D0;
+    --rule-2:     #BFC0B6;
+
+    /* blocos */
+    --t-now:      #16513F;   /* verde profundo — etapa corrente */
+    --t-now-ink:  #EDF3EF;
+    --t-sign:     #1B44C8;   /* cobalto — prazo, calendário */
+    --t-sign-ink: #F0F2FF;
+    --t-deep:     #182229;   /* ardósia — projeto final */
+    --t-deep-ink: #E7ECEE;
+    --t-sage:     #C7D2C9;
+    --t-bone:     #E1DED2;
+    --t-pale:     #DCDED6;
+
+    /* semânticos */
+    --live:       #16513F;
+    --live-soft:  #DDE9E2;
+    --warn:       #7C4A12;
+    --warn-soft:  #F1E6D5;
+    --accent:     #1B44C8;
+    --accent-soft:#DFE4FA;
+
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:  "Public Sans", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+
+    --measure: 66ch;
+    --gap: 10px;
+    --r: 14px;
   }
+
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --ground:#0B1317; --surface:#121D23; --surface-2:#18272F;
-      --ink:#E9F1EF; --ink-2:#A9BDC3; --ink-3:#78909A;
-      --rule:#23363E; --rule-strong:#344B54;
-      --accent:#8CBAEC; --accent-soft:#15293C;
-      --live:#55D3A0; --live-soft:#0D2C22;
-      --warn:#E2B366; --warn-soft:#2C2312;
-      --ph2:#16283A; --ph3:#1C3449; --ph4:#234161; --ph5:#2B5279;
-      --ph6:#8CBAEC; --ph6-ink:#0B1317;
+      --paper:#0D1114; --card:#151B1F; --ink:#E8EDEB; --ink-2:#9FAFB3; --ink-3:#71838A;
+      --rule:#242D31; --rule-2:#36434A;
+      --t-now:#1E6B53; --t-now-ink:#F0F7F3;
+      --t-sign:#3B63E8; --t-sign-ink:#F2F4FF;
+      --t-deep:#0B1216; --t-deep-ink:#DDE5E8;
+      --t-sage:#26362E; --t-bone:#2A2A24; --t-pale:#232A2C;
+      --live:#4FC79B; --live-soft:#123026;
+      --warn:#DDAE68; --warn-soft:#2A2214;
+      --accent:#8FAAF5; --accent-soft:#161F3C;
     }
   }
   :root[data-theme="dark"] {
-    --ground:#0B1317; --surface:#121D23; --surface-2:#18272F;
-    --ink:#E9F1EF; --ink-2:#A9BDC3; --ink-3:#78909A;
-    --rule:#23363E; --rule-strong:#344B54;
-    --accent:#8CBAEC; --accent-soft:#15293C;
-    --live:#55D3A0; --live-soft:#0D2C22;
-    --warn:#E2B366; --warn-soft:#2C2312;
-    --ph2:#16283A; --ph3:#1C3449; --ph4:#234161; --ph5:#2B5279;
-    --ph6:#8CBAEC; --ph6-ink:#0B1317;
+    --paper:#0D1114; --card:#151B1F; --ink:#E8EDEB; --ink-2:#9FAFB3; --ink-3:#71838A;
+    --rule:#242D31; --rule-2:#36434A;
+    --t-now:#1E6B53; --t-now-ink:#F0F7F3;
+    --t-sign:#3B63E8; --t-sign-ink:#F2F4FF;
+    --t-deep:#0B1216; --t-deep-ink:#DDE5E8;
+    --t-sage:#26362E; --t-bone:#2A2A24; --t-pale:#232A2C;
+    --live:#4FC79B; --live-soft:#123026;
+    --warn:#DDAE68; --warn-soft:#2A2214;
+    --accent:#8FAAF5; --accent-soft:#161F3C;
   }
 
   body {
-    background: var(--ground); color: var(--ink);
-    font-family: var(--sans); font-size: 16px; line-height: 1.62;
-    -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
     overflow-wrap: break-word;
   }
 
-  h1, h2, h3 { font-family: var(--serif); text-wrap: balance; margin: 0; font-weight: 600; }
-  h1 { font-size: clamp(1.7rem, 6vw, 2.7rem); line-height: 1.06; letter-spacing: -0.018em; }
-  h2 { font-size: clamp(1.25rem, 4.4vw, 1.7rem); line-height: 1.18; letter-spacing: -0.012em; }
+  h1, h2, h3 { font-family: var(--serif); margin: 0; font-weight: 600; text-wrap: balance; }
   p { margin: 0; max-width: var(--measure); }
-  .eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-3); }
+  .eyebrow { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); }
   .lede { color: var(--ink-2); font-size: 1rem; }
 
-  .wrap { max-width: var(--page); margin: 0 auto; padding: 0 20px 80px; }
-  .masthead { padding: 30px 0 16px; display: flex; flex-direction: column; gap: 12px; }
-  .kicker { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2); }
-  .mast-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
-
-  .btn {
-    font-family: var(--sans); font-size: 0.85rem; font-weight: 600;
-    background: var(--accent); color: var(--ground); border: 1px solid var(--accent);
-    padding: 11px 18px; cursor: pointer; min-height: 44px; white-space: nowrap;
+  /* ============ estrutura ============ */
+  .shell {
+    display: grid;
+    grid-template-columns: 268px 1fr;
+    gap: var(--gap);
+    padding: var(--gap);
+    min-height: 100vh;
   }
-  .btn:hover { opacity: 0.88; }
-  .btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 
-  .tabbar { position: sticky; top: 0; z-index: 40; background: var(--ground); border-bottom: 1px solid var(--rule-strong); margin: 0 -20px; }
-  .tabbar-inner {
-    max-width: var(--page); margin: 0 auto; padding: 0 20px;
-    display: flex; gap: 2px; overflow-x: auto;
-    scrollbar-width: none; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity;
+  /* ---- coluna fixa ---- */
+  .rail {
+    background: var(--card);
+    border-radius: var(--r);
+    padding: 26px 24px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    position: sticky; top: var(--gap);
+    height: calc(100vh - var(--gap) * 2);
   }
-  .tabbar-inner::-webkit-scrollbar { display: none; }
-  .tab {
-    flex: 0 0 auto; scroll-snap-align: start;
-    font-family: var(--sans); font-size: 0.82rem; font-weight: 600;
-    color: var(--ink-3); background: transparent; border: 0;
-    border-bottom: 3px solid transparent;
-    padding: 14px 11px; min-height: 50px; cursor: pointer; white-space: nowrap;
+  .rail-top { display: flex; flex-direction: column; gap: 4px; }
+  .rail-name { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.01em; }
+  .rail-sub { font-size: 0.74rem; color: var(--ink-3); letter-spacing: 0.02em; }
+  .rail-bot { display: flex; flex-direction: column; gap: 14px; }
+  .rail-bot p { font-size: 0.79rem; color: var(--ink-2); line-height: 1.5; }
+  .rail-stat { display: flex; flex-direction: column; gap: 2px; padding-top: 14px; border-top: 1px solid var(--rule); }
+  .rail-stat b { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--live); }
+  .rail-stat span { font-size: 0.72rem; color: var(--ink-3); letter-spacing: 0.04em; text-transform: uppercase; font-weight: 600; }
+
+  .back {
+    font-family: var(--sans); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em;
+    background: transparent; border: 1px solid var(--rule-2); color: var(--ink-2);
+    border-radius: 999px; padding: 9px 15px; cursor: pointer; min-height: 40px;
+    align-self: flex-start; display: none;
   }
-  .tab:hover { color: var(--ink); }
-  .tab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
-  .tab[data-state="now"][aria-selected="true"] { color: var(--live); border-bottom-color: var(--live); }
-  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; }
-  .tab .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--live); margin-left: 5px; vertical-align: 2px; }
+  .back:hover { border-color: var(--ink); color: var(--ink); }
+  .back:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  body[data-view="section"] .back { display: inline-block; }
 
-  .panel { display: none; padding-top: 32px; }
-  .panel[data-active="true"] { display: flex; flex-direction: column; gap: 40px; }
+  /* ---- grade bento ---- */
+  .bento {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(132px, 1fr);
+    gap: var(--gap);
+    min-height: calc(100vh - var(--gap) * 2);
+  }
+  body[data-view="section"] .bento { display: none; }
 
+  .tile {
+    position: relative; display: flex; flex-direction: column; justify-content: space-between;
+    border: 0; border-radius: var(--r); padding: 18px 20px 20px;
+    font-family: var(--sans); text-align: left; cursor: pointer;
+    background: var(--t-pale); color: var(--ink);
+    transition: transform 140ms ease, filter 140ms ease;
+    overflow: hidden; min-width: 0;
+  }
+  .tile:hover { transform: translateY(-2px); filter: brightness(1.03); }
+  .tile:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .tile-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+  .tile-tag { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.72; }
+  .tile-when { font-size: 0.7rem; font-weight: 600; font-variant-numeric: tabular-nums; opacity: 0.72; }
+  .tile-label { font-family: var(--serif); font-size: clamp(1.5rem, 2.4vw, 2.2rem); line-height: 1.02; font-weight: 400; letter-spacing: -0.015em; }
+  .tile-note { font-size: 0.76rem; opacity: 0.74; margin-top: 5px; max-width: 34ch; }
+
+  .tile.now   { background: var(--t-now);  color: var(--t-now-ink); }
+  .tile.sign  { background: var(--t-sign); color: var(--t-sign-ink); }
+  .tile.deep  { background: var(--t-deep); color: var(--t-deep-ink); }
+  .tile.sage  { background: var(--t-sage); }
+  .tile.bone  { background: var(--t-bone); }
+
+  .a-now   { grid-column: span 2; grid-row: span 2; }
+  .a-wide  { grid-column: span 2; }
+
+  .pulse { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: currentColor; margin-right: 7px; vertical-align: 1px; }
+
+  /* ---- leitor de seção ---- */
+  .reader { display: none; }
+  body[data-view="section"] .reader { display: block; }
+  .panel { display: none; }
+  .panel[data-active="true"] { display: flex; flex-direction: column; gap: 34px; }
+
+  .sheet { background: var(--card); border-radius: var(--r); padding: 34px 36px 40px; }
+  .sheet + .sheet { margin-top: var(--gap); }
+  .sheet-head { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
+  .sheet-head h2 { font-size: clamp(1.6rem, 3.6vw, 2.4rem); line-height: 1.08; letter-spacing: -0.02em; }
   section.blk { display: flex; flex-direction: column; gap: 18px; }
-  .sec-head { display: flex; flex-direction: column; gap: 7px; padding-bottom: 12px; border-bottom: 1px solid var(--rule-strong); }
+  section.blk + section.blk { margin-top: 34px; padding-top: 30px; border-top: 1px solid var(--rule); }
+  .sec-head { display: flex; flex-direction: column; gap: 6px; }
+  .sec-head h2 { font-size: clamp(1.25rem, 2.6vw, 1.6rem); line-height: 1.15; letter-spacing: -0.012em; }
 
-  /* faixa de metadados da unidade */
-  .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
-  .meta div { background: var(--surface); padding: 13px 15px; display: flex; flex-direction: column; gap: 3px; }
-  .meta dt { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-3); }
+  /* ---- componentes internos ---- */
+  .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+  .meta div { background: var(--card); padding: 13px 15px; display: flex; flex-direction: column; gap: 3px; }
+  .meta dt { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
   .meta dd { margin: 0; font-family: var(--serif); font-size: 1.2rem; font-variant-numeric: tabular-nums; }
   .meta div.hot { background: var(--live-soft); }
   .meta div.hot dd { color: var(--live); }
 
-  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
-  .tile { background: var(--surface); padding: 16px 18px; display: flex; flex-direction: column; gap: 5px; }
-  .tile .label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-3); }
-  .tile .value { font-family: var(--serif); font-size: 1.5rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
-  .tile .sub { font-size: 0.8rem; color: var(--ink-2); }
-  .tile.is-live { background: var(--live-soft); }
-  .tile.is-live .value { color: var(--live); }
+  .split { display: grid; grid-template-columns: 1.15fr 1fr; gap: 30px; align-items: start; }
+  .stack { display: flex; flex-direction: column; gap: 14px; }
 
-  .track { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
-  .stage { background: var(--surface); padding: 15px; display: flex; flex-direction: column; gap: 9px; min-width: 0; text-align: left; font-family: var(--sans); border: 0; cursor: pointer; color: inherit; }
-  .stage:hover { background: var(--surface-2); }
-  .stage-top { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
-  .stage-n { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.09em; color: var(--ink-3); }
-  .stage-pts { font-size: 0.72rem; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
-  .stage-title { font-family: var(--serif); font-size: 0.96rem; line-height: 1.25; }
-  .stage-dates { font-size: 0.74rem; color: var(--ink-2); font-variant-numeric: tabular-nums; margin-top: auto; }
-  .stage.now { background: var(--live-soft); box-shadow: inset 0 3px 0 var(--live); }
-  .stage.now:hover { background: var(--live-soft); }
-  .stage.now .stage-n, .stage.now .stage-dates { color: var(--live); font-weight: 600; }
-  .stage.final { background: var(--accent-soft); }
-
-  .split { display: grid; grid-template-columns: 1.15fr 1fr; gap: 34px; align-items: start; }
-  .stack { display: flex; flex-direction: column; gap: 16px; }
-
-  .outline { border: 1px solid var(--rule); background: var(--surface); }
-  .out-row { display: grid; grid-template-columns: 3rem 1fr auto; gap: 12px; align-items: baseline; padding: 11px 16px; border-bottom: 1px solid var(--rule); }
+  .outline { border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+  .out-row { display: grid; grid-template-columns: 3.2rem 1fr auto; gap: 12px; align-items: baseline; padding: 11px 16px; border-bottom: 1px solid var(--rule); background: var(--card); }
   .out-row:last-child { border-bottom: 0; }
-  .out-row.lvl1 { background: var(--surface-2); }
+  .out-row.lvl1 { background: var(--paper); }
   .out-row.lvl2 { padding-left: 30px; }
   .out-row.lvl3 { padding-left: 46px; }
-  .out-n { font-size: 0.76rem; font-weight: 600; color: var(--ink-3); font-variant-numeric: tabular-nums; }
-  .out-row.lvl1 .out-t { font-weight: 700; letter-spacing: 0.03em; font-size: 0.86rem; }
+  .out-n { font-size: 0.74rem; font-weight: 700; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .out-row.lvl1 .out-t { font-weight: 700; letter-spacing: 0.04em; font-size: 0.84rem; text-transform: uppercase; }
   .out-row.lvl2 .out-t, .out-row.lvl3 .out-t { color: var(--ink-2); font-size: 0.89rem; }
-  .owner { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.06em; padding: 3px 7px; border: 1px solid var(--rule-strong); color: var(--ink-2); white-space: nowrap; }
+  .owner { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.07em; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--rule-2); color: var(--ink-2); white-space: nowrap; }
   .owner.now { border-color: var(--live); color: var(--live); background: var(--live-soft); }
 
-  .chain { display: flex; flex-direction: column; border-left: 2px solid var(--rule-strong); }
+  .chain { display: flex; flex-direction: column; border-left: 2px solid var(--rule-2); }
   .link { padding: 0 0 20px 20px; position: relative; display: flex; flex-direction: column; gap: 4px; }
   .link:last-child { padding-bottom: 0; }
-  .link::before { content: ""; position: absolute; left: -6px; top: 7px; width: 10px; height: 10px; background: var(--ground); border: 2px solid var(--rule-strong); }
-  .link.done::before { border-color: var(--accent); background: var(--accent); }
-  .link.done .a { color: var(--accent); font-weight: 600; }
-  .link .q { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-3); }
-  .link .a { font-family: var(--serif); font-size: 1.02rem; }
-  .link .note { font-size: 0.87rem; color: var(--ink-2); }
+  .link::before { content: ""; position: absolute; left: -6px; top: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--card); border: 2px solid var(--rule-2); }
+  .link.done::before { border-color: var(--live); background: var(--live); }
+  .link .q { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
+  .link .a { font-family: var(--serif); font-size: 1.05rem; }
+  .link.done .a { color: var(--live); font-weight: 600; }
+  .link .note { font-size: 0.86rem; color: var(--ink-2); }
 
-  .axes { display: flex; flex-direction: column; border: 1px solid var(--rule); background: var(--surface); }
-  .axis { display: grid; grid-template-columns: 11rem 1fr; gap: 16px; padding: 13px 16px; border-bottom: 1px solid var(--rule); align-items: start; }
+  .axes { display: flex; flex-direction: column; border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+  .axis { display: grid; grid-template-columns: 11rem 1fr; gap: 16px; padding: 13px 16px; border-bottom: 1px solid var(--rule); align-items: start; background: var(--card); }
   .axis:last-of-type { border-bottom: 0; }
-  .axis-name { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.11em; text-transform: uppercase; color: var(--ink-3); padding-top: 9px; }
+  .axis-name { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); padding-top: 10px; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip {
-    font-family: var(--sans); font-size: 0.85rem; color: var(--ink-2);
-    background: transparent; border: 1px solid var(--rule-strong);
-    padding: 8px 12px; cursor: pointer; line-height: 1.25; min-height: 40px;
-  }
+  .chip { font-family: var(--sans); font-size: 0.84rem; color: var(--ink-2); background: transparent; border: 1px solid var(--rule-2); border-radius: 999px; padding: 8px 14px; cursor: pointer; line-height: 1.25; min-height: 40px; }
   .chip:hover { border-color: var(--accent); color: var(--accent); }
-  .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--ground); font-weight: 600; }
+  .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--card); font-weight: 600; }
   .chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .readout { border: 1px solid var(--rule-strong); border-top: 0; background: var(--surface-2); padding: 16px 18px; display: flex; flex-direction: column; gap: 7px; }
-  .readout .label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-3); }
-  .readout .sentence { font-family: var(--serif); font-size: 1.05rem; line-height: 1.55; }
-  .readout .sentence .filled { color: var(--accent); font-weight: 600; }
-  .readout .sentence .blank { color: var(--ink-3); border-bottom: 1px dashed var(--rule-strong); }
+  .readout { margin-top: 12px; background: var(--accent-soft); border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 7px; }
+  .readout .label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
+  .readout .sentence { font-family: var(--serif); font-size: 1.1rem; line-height: 1.5; }
+  .readout .filled { color: var(--accent); font-weight: 700; }
+  .readout .blank { color: var(--ink-3); border-bottom: 1px dashed var(--rule-2); }
 
-  .specs { border: 1px solid var(--rule); background: var(--surface); }
-  .spec { display: grid; grid-template-columns: 10rem 1fr; gap: 14px; padding: 12px 16px; border-bottom: 1px solid var(--rule); }
+  .specs { border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+  .spec { display: grid; grid-template-columns: 10.5rem 1fr; gap: 14px; padding: 12px 16px; border-bottom: 1px solid var(--rule); background: var(--card); }
   .spec:last-child { border-bottom: 0; }
-  .spec dt { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-3); padding-top: 3px; }
+  .spec dt { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); padding-top: 3px; }
   .spec dd { margin: 0; font-size: 0.92rem; }
 
-  .flag { border-left: 3px solid var(--warn); background: var(--warn-soft); padding: 13px 16px; display: flex; flex-direction: column; gap: 5px; }
-  .flag .t { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.11em; text-transform: uppercase; color: var(--warn); }
-  .flag p { font-size: 0.91rem; color: var(--ink); }
-  .flag.good { border-left-color: var(--live); background: var(--live-soft); }
+  .flag { border-radius: 10px; padding: 14px 17px; display: flex; flex-direction: column; gap: 5px; background: var(--warn-soft); border-left: 3px solid var(--warn); }
+  .flag .t { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--warn); }
+  .flag p { font-size: 0.9rem; color: var(--ink); }
+  .flag.good { background: var(--live-soft); border-left-color: var(--live); }
   .flag.good .t { color: var(--live); }
-  .flag.info { border-left-color: var(--accent); background: var(--accent-soft); }
+  .flag.info { background: var(--accent-soft); border-left-color: var(--accent); }
   .flag.info .t { color: var(--accent); }
   .flags { display: flex; flex-direction: column; gap: 10px; }
 
-  ul.task { list-style: none; padding: 0; margin: 0; border: 1px solid var(--rule); background: var(--surface); }
-  ul.task li { padding: 11px 16px 11px 42px; border-bottom: 1px solid var(--rule); font-size: 0.92rem; position: relative; }
+  ul.task { list-style: none; padding: 0; margin: 0; border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+  ul.task li { padding: 12px 16px 12px 44px; border-bottom: 1px solid var(--rule); font-size: 0.91rem; position: relative; background: var(--card); }
   ul.task li:last-child { border-bottom: 0; }
-  ul.task li::before { content: ""; position: absolute; left: 16px; top: 15px; width: 13px; height: 13px; border: 1px solid var(--rule-strong); }
-  ul.task li.ok { color: var(--ink-2); }
-  ul.task li.ok::before { background: var(--live); border-color: var(--live); }
+  ul.task li::before { content: ""; position: absolute; left: 17px; top: 15px; width: 13px; height: 13px; border-radius: 3px; border: 1px solid var(--rule-2); }
 
-  .grade { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
-  .grade-col { background: var(--surface); padding: 17px 18px; display: flex; flex-direction: column; gap: 11px; }
-  .grade-col h3 { font-family: var(--sans); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.11em; text-transform: uppercase; color: var(--ink-3); }
+  .grade { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+  .grade-col { background: var(--card); padding: 18px; display: flex; flex-direction: column; gap: 11px; }
+  .grade-col h3 { font-family: var(--sans); font-size: 0.64rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
   .grade-col .big { font-family: var(--serif); font-size: 2.3rem; line-height: 1; font-variant-numeric: tabular-nums; }
-  .grade-list { display: flex; flex-direction: column; gap: 4px; font-size: 0.86rem; }
+  .grade-list { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; }
   .grade-list div { display: flex; justify-content: space-between; gap: 12px; color: var(--ink-2); }
   .grade-list span { font-variant-numeric: tabular-nums; }
-  .bar { height: 8px; background: var(--surface-2); display: flex; }
-  .bar i { display: block; }
+  .bar { height: 8px; background: var(--paper); border-radius: 999px; display: flex; overflow: hidden; }
   .bar i.n1 { background: var(--accent); width: 60%; }
   .bar i.n2 { background: var(--live); width: 40%; }
 
-  .shelf { display: grid; grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
-  .shelf-item { background: var(--surface); padding: 15px 17px; display: flex; flex-direction: column; gap: 4px; }
-  .shelf-item .n { font-family: var(--serif); font-size: 1.6rem; line-height: 1; font-variant-numeric: tabular-nums; color: var(--accent); }
-  .shelf-item .k { font-size: 0.87rem; font-weight: 600; }
-  .shelf-item .d { font-size: 0.79rem; color: var(--ink-2); }
+  .shelf { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+  .shelf-item { background: var(--card); padding: 16px 17px; display: flex; flex-direction: column; gap: 4px; }
+  .shelf-item .n { font-family: var(--serif); font-size: 1.7rem; line-height: 1; font-variant-numeric: tabular-nums; color: var(--accent); }
+  .shelf-item .k { font-size: 0.86rem; font-weight: 700; }
+  .shelf-item .d { font-size: 0.78rem; color: var(--ink-2); }
 
-  .who { border: 1px solid var(--rule); background: var(--surface); }
-  .who-row { display: grid; grid-template-columns: 1fr 1.2fr; gap: 14px; padding: 12px 16px; border-bottom: 1px solid var(--rule); font-size: 0.89rem; }
+  .who { border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+  .who-row { display: grid; grid-template-columns: 1fr 1.2fr; gap: 14px; padding: 12px 16px; border-bottom: 1px solid var(--rule); font-size: 0.88rem; background: var(--card); }
   .who-row:last-child { border-bottom: 0; }
   .who-row span { color: var(--ink-2); }
 
-  footer { margin-top: 6px; border-top: 1px solid var(--rule-strong); padding-top: 18px; font-size: 0.79rem; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .spectrum { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gap); }
+  .sp { border-radius: 10px; padding: 16px 17px; display: flex; flex-direction: column; gap: 5px; min-height: 132px; justify-content: space-between; }
+  .sp .who2 { font-family: var(--serif); font-size: 1.15rem; line-height: 1.1; }
+  .sp .does { font-size: 0.78rem; opacity: 0.8; }
+  .sp .idx { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.65; }
+  .sp1 { background: var(--t-bone); }
+  .sp2 { background: var(--t-pale); }
+  .sp3 { background: var(--t-sage); }
+  .sp4 { background: var(--t-now); color: var(--t-now-ink); }
 
-  dialog#cal { border: 1px solid var(--rule-strong); background: var(--surface); color: var(--ink); padding: 0; width: min(1000px, 100vw); max-width: 100vw; max-height: 92vh; overflow: auto; }
-  dialog#cal::backdrop { background: rgba(6,16,20,0.62); }
-  .cal-head { position: sticky; top: 0; background: var(--surface); z-index: 2; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 18px 20px 14px; border-bottom: 1px solid var(--rule); }
-  .cal-head h2 { font-size: 1.3rem; }
-  .cal-head .sub { font-size: 0.81rem; color: var(--ink-2); margin-top: 3px; }
-  .cal-close { background: transparent; border: 1px solid var(--rule-strong); color: var(--ink-2); font-family: var(--sans); font-size: 0.9rem; padding: 10px 14px; min-height: 44px; cursor: pointer; }
+  footer { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--rule); font-size: 0.78rem; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 6px 18px; }
+
+  /* ---- calendário ---- */
+  dialog#cal { border: 0; background: var(--card); color: var(--ink); padding: 0; width: min(1000px, 100vw); max-width: 100vw; max-height: 92vh; overflow: auto; border-radius: var(--r); }
+  dialog#cal::backdrop { background: rgba(8,12,14,0.6); }
+  .cal-head { position: sticky; top: 0; background: var(--card); z-index: 2; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 22px 24px 16px; border-bottom: 1px solid var(--rule); }
+  .cal-head h2 { font-size: 1.4rem; }
+  .cal-head .sub { font-size: 0.8rem; color: var(--ink-2); margin-top: 3px; }
+  .cal-close { background: transparent; border: 1px solid var(--rule-2); border-radius: 999px; color: var(--ink-2); font-family: var(--sans); font-size: 0.85rem; font-weight: 600; padding: 10px 16px; min-height: 44px; cursor: pointer; }
   .cal-close:hover { border-color: var(--ink); color: var(--ink); }
-  .months { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 22px; padding: 20px; }
+  .months { display: grid; grid-template-columns: repeat(auto-fit, minmax(198px, 1fr)); gap: 22px; padding: 22px 24px; }
   .month { display: flex; flex-direction: column; gap: 7px; }
-  .month h3 { font-family: var(--sans); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-3); }
-  .dow, .grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
-  .dow span { font-size: 0.58rem; font-weight: 700; color: var(--ink-3); text-align: center; }
-  .day { aspect-ratio: 1/1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; font-size: 0.74rem; font-variant-numeric: tabular-nums; color: var(--ink-2); background: var(--surface-2); border: 0; font-family: var(--sans); padding: 0; }
+  .month h3 { font-family: var(--sans); font-size: 0.64rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
+  .dow, .grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
+  .dow span { font-size: 0.57rem; font-weight: 700; color: var(--ink-3); text-align: center; }
+  .day { aspect-ratio: 1/1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; font-size: 0.73rem; font-variant-numeric: tabular-nums; color: var(--ink-2); background: var(--paper); border: 0; border-radius: 5px; font-family: var(--sans); padding: 0; }
   button.day { cursor: pointer; }
   .day.empty { background: transparent; }
-  .day.p1 { background: var(--live-soft); color: var(--live); font-weight: 600; }
-  .day.p2 { background: var(--ph2); color: var(--ink); }
-  .day.p3 { background: var(--ph3); color: var(--ink); }
-  .day.p4 { background: var(--ph4); color: var(--ink); }
-  .day.p5 { background: var(--ph5); color: var(--ink); }
-  .day.p6 { background: var(--ph6); color: var(--ph6-ink); }
-  .day.due { outline: 2px solid var(--ink); outline-offset: -2px; font-weight: 700; }
-  .day[aria-pressed="true"] { outline: 3px solid var(--accent); outline-offset: -3px; }
+  .day.p1 { background: var(--t-now); color: var(--t-now-ink); font-weight: 700; }
+  .day.p2 { background: var(--t-bone); color: var(--ink); }
+  .day.p3 { background: var(--t-pale); color: var(--ink); }
+  .day.p4 { background: var(--t-sage); color: var(--ink); }
+  .day.p5 { background: var(--t-sign); color: var(--t-sign-ink); }
+  .day.p6 { background: var(--t-deep); color: var(--t-deep-ink); }
+  .day.due { box-shadow: inset 0 0 0 2px var(--ink); font-weight: 700; }
+  .day[aria-pressed="true"] { box-shadow: inset 0 0 0 3px var(--accent); }
   .day .marks { display: flex; gap: 2px; height: 4px; align-items: center; }
   .day .marks i { display: block; width: 4px; height: 4px; border-radius: 50%; background: currentColor; }
-  .cal-detail { position: sticky; bottom: 0; background: var(--surface-2); border-top: 1px solid var(--rule-strong); padding: 14px 20px; font-size: 0.87rem; min-height: 56px; display: flex; align-items: center; }
+  .cal-detail { position: sticky; bottom: 0; background: var(--paper); border-top: 1px solid var(--rule); padding: 15px 24px; font-size: 0.86rem; min-height: 56px; display: flex; align-items: center; }
   .cal-detail .empty-msg { color: var(--ink-3); }
-  .legend { display: flex; flex-wrap: wrap; gap: 7px 16px; padding: 0 20px 20px; font-size: 0.77rem; color: var(--ink-2); }
+  .legend { display: flex; flex-wrap: wrap; gap: 7px 16px; padding: 0 24px 22px; font-size: 0.76rem; color: var(--ink-2); }
   .legend div { display: flex; align-items: center; gap: 6px; }
-  .legend b { display: block; width: 13px; height: 13px; flex: 0 0 auto; }
-  .legend .k1 { background: var(--live-soft); box-shadow: inset 0 0 0 1px var(--live); }
-  .legend .k2 { background: var(--ph2); }
-  .legend .k3 { background: var(--ph3); }
-  .legend .k4 { background: var(--ph4); }
-  .legend .k5 { background: var(--ph5); }
-  .legend .k6 { background: var(--ph6); }
-  .legend .kd { background: transparent; outline: 2px solid var(--ink); outline-offset: -2px; }
-  .legend .ke { background: transparent; position: relative; }
+  .legend b { display: block; width: 13px; height: 13px; border-radius: 3px; flex: 0 0 auto; }
+  .legend .k1 { background: var(--t-now); }
+  .legend .k2 { background: var(--t-bone); }
+  .legend .k3 { background: var(--t-pale); }
+  .legend .k4 { background: var(--t-sage); }
+  .legend .k5 { background: var(--t-sign); }
+  .legend .k6 { background: var(--t-deep); }
+  .legend .kd { background: transparent; box-shadow: inset 0 0 0 2px var(--ink); }
+  .legend .ke { background: var(--paper); position: relative; }
   .legend .ke::after { content: ""; position: absolute; inset: 0; margin: auto; width: 5px; height: 5px; border-radius: 50%; background: var(--ink); }
 
-  @media (max-width: 940px) {
-    .split { grid-template-columns: 1fr; gap: 26px; }
-    .track { grid-template-columns: 1fr 1fr; }
+  /* ---- responsivo ---- */
+  @media (max-width: 1080px) {
+    .shell { grid-template-columns: 1fr; }
+    .rail { position: static; height: auto; flex-direction: row; align-items: flex-end; justify-content: space-between; gap: 20px; padding: 20px 22px; flex-wrap: wrap; }
+    .rail-bot { flex-direction: row; align-items: flex-end; gap: 22px; }
+    .rail-bot p { max-width: 40ch; }
+    .rail-stat { border-top: 0; padding-top: 0; }
+    .bento { min-height: 0; grid-auto-rows: minmax(118px, auto); }
+    .split { grid-template-columns: 1fr; gap: 24px; }
+    .spectrum { grid-template-columns: repeat(2, 1fr); }
+    .grade { grid-template-columns: 1fr; }
     .axis { grid-template-columns: 1fr; gap: 8px; }
     .axis-name { padding-top: 0; }
-    .grade { grid-template-columns: 1fr; }
   }
-  @media (max-width: 620px) {
-    .wrap { padding: 0 14px 64px; }
-    .tabbar { margin: 0 -14px; }
-    .tabbar-inner { padding: 0 14px; }
-    .masthead { padding: 22px 0 12px; }
-    .panel[data-active="true"] { gap: 32px; }
-    .track { grid-template-columns: 1fr; }
-    .stage { flex-direction: row; align-items: baseline; flex-wrap: wrap; gap: 5px 10px; padding: 13px 15px; }
-    .stage-top { order: 1; flex: 0 0 auto; gap: 10px; }
-    .stage-title { order: 2; flex: 1 1 100%; }
-    .stage-dates { order: 3; flex: 0 0 auto; margin-top: 0; }
+  @media (max-width: 680px) {
+    :root { --gap: 8px; --r: 12px; }
+    .rail { flex-direction: column; align-items: stretch; }
+    .rail-bot { flex-direction: column; align-items: stretch; gap: 12px; }
+    .bento { grid-template-columns: repeat(2, 1fr); grid-auto-rows: minmax(112px, auto); }
+    .a-now { grid-column: span 2; grid-row: span 1; min-height: 168px; }
+    .a-wide { grid-column: span 2; }
+    .tile-label { font-size: 1.45rem; }
+    .sheet { padding: 24px 20px 28px; }
+    .spectrum { grid-template-columns: 1fr; }
     .spec, .who-row { grid-template-columns: 1fr; gap: 2px; }
-    .out-row { grid-template-columns: 2.6rem 1fr; gap: 10px; }
+    .out-row { grid-template-columns: 2.6rem 1fr; }
     .out-row .owner { grid-column: 2; justify-self: start; margin-top: 4px; }
     .out-row.lvl2 { padding-left: 24px; }
     .out-row.lvl3 { padding-left: 36px; }
     .months { grid-template-columns: 1fr; padding: 16px; }
     .cal-head, .cal-detail { padding-left: 16px; padding-right: 16px; }
     .legend { padding: 0 16px 16px; }
-    dialog#cal { max-height: 100vh; height: 100vh; }
+    dialog#cal { max-height: 100vh; height: 100vh; border-radius: 0; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
-<div class="wrap">
+<div class="shell">
 
-  <header class="masthead">
-    <div class="kicker">Belas Artes · Design Digital e Novas Mídias · Turma 20262.1T</div>
-    <div class="mast-row">
-      <h1>PIC Pós</h1>
-      <button class="btn" id="openCal" type="button">Calendário</button>
+  <aside class="rail">
+    <div class="rail-top">
+      <div class="rail-name">PIC Pós — Projeto Integrado de Curso</div>
+      <div class="rail-sub">Belas Artes · Turma 20262.1T</div>
     </div>
-    <p class="lede">Quatro unidades que escrevem, no mesmo arquivo, um <strong>projeto de pesquisa</strong>. Depois, o <strong>artigo</strong> que o executa.</p>
-  </header>
-
-  <nav class="tabbar">
-    <div class="tabbar-inner" role="tablist" aria-label="Seções">
-      <button class="tab" role="tab" id="t-agora" aria-controls="p-agora" aria-selected="true">Agora</button>
-      <button class="tab" role="tab" id="t-un1" aria-controls="p-un1" aria-selected="false" data-state="now">UN 01 · Tema<span class="dot"></span></button>
-      <button class="tab" role="tab" id="t-un2" aria-controls="p-un2" aria-selected="false">UN 02 · Problema</button>
-      <button class="tab" role="tab" id="t-un3" aria-controls="p-un3" aria-selected="false">UN 03 · Referencial</button>
-      <button class="tab" role="tab" id="t-un4" aria-controls="p-un4" aria-selected="false">UN 04 · Metodologia</button>
-      <button class="tab" role="tab" id="t-entrega" aria-controls="p-entrega" aria-selected="false">Entrega</button>
-      <button class="tab" role="tab" id="t-final" aria-controls="p-final" aria-selected="false">Projeto final</button>
-      <button class="tab" role="tab" id="t-tema" aria-controls="p-tema" aria-selected="false">Meu tema</button>
-      <button class="tab" role="tab" id="t-regras" aria-controls="p-regras" aria-selected="false">Regras e nota</button>
-      <button class="tab" role="tab" id="t-acervo" aria-controls="p-acervo" aria-selected="false">Acervo</button>
+    <button class="back" id="back" type="button">← Todas as seções</button>
+    <div class="rail-bot">
+      <p>Quatro unidades que escrevem, no mesmo arquivo, um projeto de pesquisa. Depois, o artigo que o executa.</p>
+      <div class="rail-stat">
+        <b id="railCount">1 dia</b>
+        <span>até a entrega da UN 01</span>
+      </div>
     </div>
-  </nav>
+  </aside>
 
-  <!-- ============ AGORA ============ -->
-  <div class="panel" id="p-agora" role="tabpanel" aria-labelledby="t-agora" data-active="true">
-    <div class="tiles">
-      <div class="tile is-live">
-        <div class="label">Etapa agora</div>
-        <div class="value">UN 01</div>
-        <div class="sub">Definir o tema de pesquisa</div>
-      </div>
-      <div class="tile">
-        <div class="label">Entrega</div>
-        <div class="value">21.08</div>
-        <div class="sub">em 2 dias · 1,0 pt · 4 frequências</div>
-      </div>
-      <div class="tile">
-        <div class="label">Próximo encontro</div>
-        <div class="value">24.08</div>
-        <div class="sub">segunda, 19h — problema e objetivos</div>
-      </div>
-      <div class="tile">
-        <div class="label">Fecha o semestre</div>
-        <div class="value">27.11</div>
-        <div class="sub">depósito do projeto final</div>
-      </div>
+  <main>
+
+    <div class="bento">
+      <button class="tile now a-now" type="button" data-go="t-un1">
+        <div class="tile-top">
+          <span class="tile-tag"><span class="pulse"></span>Unidade 1 · agora</span>
+          <span class="tile-when">até 21.08</span>
+        </div>
+        <div>
+          <div class="tile-label">Tema</div>
+          <div class="tile-note">Um parágrafo de 5 a 15 linhas. Documento pronto — falta o RA.</div>
+        </div>
+      </button>
+
+      <button class="tile sign" type="button" data-cal="1">
+        <div class="tile-top">
+          <span class="tile-tag">ago — nov</span>
+        </div>
+        <div><div class="tile-label">Calendário</div></div>
+      </button>
+
+      <button class="tile bone" type="button" data-go="t-tema">
+        <div class="tile-top">
+          <span class="tile-tag">O recorte</span>
+        </div>
+        <div>
+          <div class="tile-label">Meu tema</div>
+          <div class="tile-note">Sobrecarga informacional no planejamento de viagens</div>
+        </div>
+      </button>
+
+      <button class="tile sage a-wide" type="button" data-go="t-doc">
+        <div class="tile-top">
+          <span class="tile-tag">NBR 15287</span>
+        </div>
+        <div>
+          <div class="tile-label">O documento</div>
+          <div class="tile-note">Estrutura do projeto e quem escreve cada seção</div>
+        </div>
+      </button>
+
+      <button class="tile" type="button" data-go="t-un2">
+        <div class="tile-top">
+          <span class="tile-tag">Unidade 2</span>
+          <span class="tile-when">05.09</span>
+        </div>
+        <div><div class="tile-label">Problema</div></div>
+      </button>
+
+      <button class="tile" type="button" data-go="t-un3">
+        <div class="tile-top">
+          <span class="tile-tag">Unidade 3</span>
+          <span class="tile-when">20.09</span>
+        </div>
+        <div><div class="tile-label">Referencial</div></div>
+      </button>
+
+      <button class="tile" type="button" data-go="t-un4">
+        <div class="tile-top">
+          <span class="tile-tag">Unidade 4</span>
+          <span class="tile-when">06.10</span>
+        </div>
+        <div><div class="tile-label">Metodologia</div></div>
+      </button>
+
+      <button class="tile bone" type="button" data-go="t-entrega">
+        <div class="tile-top">
+          <span class="tile-tag">Quinta etapa</span>
+          <span class="tile-when">21.10</span>
+        </div>
+        <div><div class="tile-label">Entrega</div></div>
+      </button>
+
+      <button class="tile deep a-wide" type="button" data-go="t-final">
+        <div class="tile-top">
+          <span class="tile-tag">Unidade 6 · nota 2</span>
+          <span class="tile-when">27.11</span>
+        </div>
+        <div>
+          <div class="tile-label">Projeto final</div>
+          <div class="tile-note">Sete modelos — obrigatório para concluir o curso</div>
+        </div>
+      </button>
+
+      <button class="tile" type="button" data-go="t-regras">
+        <div class="tile-top">
+          <span class="tile-tag">Formato · nota · faltas</span>
+        </div>
+        <div><div class="tile-label">Regras</div></div>
+      </button>
+
+      <button class="tile" type="button" data-go="t-acervo">
+        <div class="tile-top">
+          <span class="tile-tag">Material reunido</span>
+        </div>
+        <div><div class="tile-label">Acervo</div></div>
+      </button>
+    </div>
+
+    <div class="reader">
+  <div class="panel" id="p-doc">
+   <div class="sheet">
+    <div class="sheet-head">
+      <div class="eyebrow">NBR 15287</div>
+      <h2>O documento</h2>
     </div>
 
     <section class="blk">
       <div class="sec-head">
-        <div class="eyebrow">A trilha</div>
-        <h2>Seis entregas, uma só peça de escrita</h2>
-        <p class="lede">Cada entrega reabre o <strong>mesmo arquivo</strong> e acrescenta uma seção. Toque numa etapa para abrir a aba dela.</p>
+        <p class="lede">Um arquivo só, da unidade 1 à 5, igual para todos os cursos. Cada entrega reabre esse arquivo, aplica o feedback recebido e acrescenta a seção da vez.</p>
       </div>
-      <div class="track">
-        <button class="stage now" type="button" data-go="t-un1">
-          <div class="stage-top"><span class="stage-n">UN 01</span><span class="stage-pts">1,0</span></div>
-          <div class="stage-title">Tema</div>
-          <div class="stage-dates">13.08 – 21.08</div>
-        </button>
-        <button class="stage" type="button" data-go="t-un2">
-          <div class="stage-top"><span class="stage-n">UN 02</span><span class="stage-pts">1,0</span></div>
-          <div class="stage-title">Problema, objetivos e justificativa</div>
-          <div class="stage-dates">22.08 – 05.09</div>
-        </button>
-        <button class="stage" type="button" data-go="t-un3">
-          <div class="stage-top"><span class="stage-n">UN 03</span><span class="stage-pts">1,0</span></div>
-          <div class="stage-title">Referencial teórico</div>
-          <div class="stage-dates">06.09 – 20.09</div>
-        </button>
-        <button class="stage" type="button" data-go="t-un4">
-          <div class="stage-top"><span class="stage-n">UN 04</span><span class="stage-pts">1,0</span></div>
-          <div class="stage-title">Metodologia, cronograma e referências</div>
-          <div class="stage-dates">21.09 – 06.10</div>
-        </button>
-        <button class="stage" type="button" data-go="t-entrega">
-          <div class="stage-top"><span class="stage-n">ENTREGA</span><span class="stage-pts">2,0</span></div>
-          <div class="stage-title">Projeto de pesquisa completo</div>
-          <div class="stage-dates">07.10 – 21.10</div>
-        </button>
-        <button class="stage final" type="button" data-go="t-final">
-          <div class="stage-top"><span class="stage-n">FINAL</span><span class="stage-pts">4,0</span></div>
-          <div class="stage-title">Artigo ou paper</div>
-          <div class="stage-dates">22.10 – 27.11</div>
-        </button>
-      </div>
-      <div class="flags">
-        <div class="flag info">
-          <div class="t">Antes de cada unidade, um plantão</div>
-          <p>O encontro sempre vem dois a três dias depois da abertura da unidade, para explicar o que entregar nela. É por isso que o de 24.08 trata de problema e objetivos, e não do tema.</p>
+      <div class="split">
+        <div class="outline">
+          <div class="out-row lvl1"><span class="out-n">1</span><span class="out-t">Introdução</span><span></span></div>
+          <div class="out-row lvl2"><span class="out-n">1.2</span><span class="out-t">Tema do projeto</span><span class="owner now">UN 01</span></div>
+          <div class="out-row lvl2"><span class="out-n">1.3</span><span class="out-t">Problema</span><span class="owner">UN 02</span></div>
+          <div class="out-row lvl2"><span class="out-n">1.4</span><span class="out-t">Objetivos</span><span class="owner">UN 02</span></div>
+          <div class="out-row lvl3"><span class="out-n">1.4.1</span><span class="out-t">Objetivo geral</span><span></span></div>
+          <div class="out-row lvl3"><span class="out-n">1.4.2</span><span class="out-t">Objetivos específicos</span><span></span></div>
+          <div class="out-row lvl2"><span class="out-n">1.5</span><span class="out-t">Justificativa</span><span class="owner">UN 02</span></div>
+          <div class="out-row lvl1"><span class="out-n">2</span><span class="out-t">Referencial teórico</span><span class="owner">UN 03</span></div>
+          <div class="out-row lvl1"><span class="out-n">3</span><span class="out-t">Metodologia</span><span class="owner">UN 04</span></div>
+          <div class="out-row lvl1"><span class="out-n">4</span><span class="out-t">Cronograma</span><span class="owner">UN 04</span></div>
+          <div class="out-row lvl1"><span class="out-n">5</span><span class="out-t">Referências</span><span class="owner">UN 04</span></div>
+        </div>
+        <div class="stack">
+          <div class="flag">
+            <div class="t">Detalhe do template</div>
+            <p>A numeração pula de <strong>1</strong> para <strong>1.2</strong> — não existe 1.1 no arquivo oficial, nas versões 2024-2 e 2025-1. Vale perguntar ao tutor se é para manter.</p>
+          </div>
+          <div class="flag good">
+            <div class="t">Template de 2025 serve</div>
+            <p>O professor confirmou: pode usar o arquivo com datas de 2025, trocando para 2026 na capa. Capa e folha de rosto entram já na primeira entrega.</p>
+          </div>
+          <div class="flag info">
+            <div class="t">Antes de cada unidade, um plantão</div>
+            <p>O encontro sempre vem dois a três dias depois da abertura da unidade, para explicar o que entregar nela. É por isso que o de 24.08 trata de problema e objetivos, e não do tema.</p>
+          </div>
+          <div>
+            <div class="eyebrow" style="margin-bottom:8px">O que sustenta cada seção</div>
+            <p style="font-size:0.91rem; color:var(--ink-2);">O <strong>referencial teórico</strong> não é resumo de leituras: é o conjunto de autores que dá linguagem ao seu problema. A <strong>metodologia</strong> descreve como você produzirá a resposta. O <strong>cronograma</strong> vai de agosto a novembro de 2026 e termina no depósito.</p>
+          </div>
         </div>
       </div>
     </section>
-  </div>
 
-  <!-- ============ UN 01 ============ -->
-  <div class="panel" id="p-un1" role="tabpanel" aria-labelledby="t-un1">
     <section class="blk">
       <div class="sec-head">
-        <div class="eyebrow">Unidade 1 · em curso</div>
-        <h2>Tema</h2>
+        <div class="eyebrow">Ciclo</div>
+        <h2>Como o feedback funciona</h2>
       </div>
+      <p class="lede">Individual e personalizado, publicado no próprio portal junto da nota, no campo de envio da atividade. Chega sempre <strong>antes do prazo da entrega seguinte</strong>. Na correção de cada unidade os professores verificam se o feedback anterior foi aplicado — então cada entrega carrega duas coisas: o material novo e os ajustes pedidos antes. Corrigem o Prof. Fernando, a Profa. Leila e um terceiro professor a ser apresentado.</p>
+    </section>
+   </div>
+  </div>
+
+  <div class="panel" id="p-un1">
+   <div class="sheet">
+    <div class="sheet-head">
+      <div class="eyebrow">Unidade 1 · em curso</div>
+      <h2>Tema</h2>
+    </div>
+
+    <section class="blk">
       <dl class="meta">
         <div class="hot"><dt>Prazo</dt><dd>21.08</dd></div>
         <div><dt>Janela</dt><dd>13.08 – 21.08</dd></div>
@@ -467,15 +610,18 @@
         <li>Moodle → Unidade 1 → Atividade 1 → Adicionar envio → Salvar e enviar</li>
       </ul>
     </section>
+  
+   </div>
   </div>
 
-  <!-- ============ UN 02 ============ -->
-  <div class="panel" id="p-un2" role="tabpanel" aria-labelledby="t-un2">
+  <div class="panel" id="p-un2">
+   <div class="sheet">
+    <div class="sheet-head">
+      <div class="eyebrow">Unidade 2</div>
+      <h2>Problema, objetivos e justificativa</h2>
+    </div>
+
     <section class="blk">
-      <div class="sec-head">
-        <div class="eyebrow">Unidade 2</div>
-        <h2>Problema, objetivos e justificativa</h2>
-      </div>
       <dl class="meta">
         <div><dt>Prazo</dt><dd>05.09</dd></div>
         <div><dt>Janela</dt><dd>22.08 – 05.09</dd></div>
@@ -512,15 +658,18 @@
         </div>
       </div>
     </section>
+  
+   </div>
   </div>
 
-  <!-- ============ UN 03 ============ -->
-  <div class="panel" id="p-un3" role="tabpanel" aria-labelledby="t-un3">
+  <div class="panel" id="p-un3">
+   <div class="sheet">
+    <div class="sheet-head">
+      <div class="eyebrow">Unidade 3</div>
+      <h2>Referencial teórico</h2>
+    </div>
+
     <section class="blk">
-      <div class="sec-head">
-        <div class="eyebrow">Unidade 3</div>
-        <h2>Referencial teórico</h2>
-      </div>
       <dl class="meta">
         <div><dt>Prazo</dt><dd>20.09</dd></div>
         <div><dt>Janela</dt><dd>06.09 – 20.09</dd></div>
@@ -551,15 +700,18 @@
         </div>
       </div>
     </section>
+  
+   </div>
   </div>
 
-  <!-- ============ UN 04 ============ -->
-  <div class="panel" id="p-un4" role="tabpanel" aria-labelledby="t-un4">
+  <div class="panel" id="p-un4">
+   <div class="sheet">
+    <div class="sheet-head">
+      <div class="eyebrow">Unidade 4</div>
+      <h2>Metodologia, cronograma e referências</h2>
+    </div>
+
     <section class="blk">
-      <div class="sec-head">
-        <div class="eyebrow">Unidade 4</div>
-        <h2>Metodologia, cronograma e referências</h2>
-      </div>
       <dl class="meta">
         <div><dt>Prazo</dt><dd>06.10</dd></div>
         <div><dt>Janela</dt><dd>21.09 – 06.10</dd></div>
@@ -647,15 +799,18 @@
         </div>
       </section>
     </section>
+  
+   </div>
   </div>
 
-  <!-- ============ ENTREGA ============ -->
-  <div class="panel" id="p-entrega" role="tabpanel" aria-labelledby="t-entrega">
+  <div class="panel" id="p-entrega">
+   <div class="sheet">
+    <div class="sheet-head">
+      <div class="eyebrow">Quinta etapa</div>
+      <h2>Entrega do projeto de pesquisa</h2>
+    </div>
+
     <section class="blk">
-      <div class="sec-head">
-        <div class="eyebrow">Quinta etapa</div>
-        <h2>Entrega do projeto de pesquisa</h2>
-      </div>
       <dl class="meta">
         <div><dt>Prazo</dt><dd>21.10</dd></div>
         <div><dt>Janela</dt><dd>07.10 – 21.10</dd></div>
@@ -684,10 +839,17 @@
         </div>
       </div>
     </section>
+  
+   </div>
   </div>
 
-  <!-- ============ PROJETO FINAL ============ -->
-  <div class="panel" id="p-final" role="tabpanel" aria-labelledby="t-final">
+  <div class="panel" id="p-final">
+   <div class="sheet">
+    <div class="sheet-head">
+      <div class="eyebrow">Unidade 6 · nota 2</div>
+      <h2>Projeto final</h2>
+    </div>
+
     <section class="blk">
       <div class="sec-head">
         <div class="eyebrow">Unidade 6 · nota 2</div>
@@ -731,10 +893,17 @@
         </div>
       </div>
     </section>
+  
+   </div>
   </div>
 
-  <!-- ============ MEU TEMA ============ -->
-  <div class="panel" id="p-tema" role="tabpanel" aria-labelledby="t-tema">
+  <div class="panel" id="p-tema">
+   <div class="sheet">
+    <div class="sheet-head">
+      <div class="eyebrow">O recorte</div>
+      <h2>Meu tema</h2>
+    </div>
+
     <section class="blk">
       <div class="sec-head">
         <div class="eyebrow">Da área ao problema</div>
@@ -828,10 +997,17 @@
         </div>
       </div>
     </section>
+  
+   </div>
   </div>
 
-  <!-- ============ REGRAS ============ -->
-  <div class="panel" id="p-regras" role="tabpanel" aria-labelledby="t-regras">
+  <div class="panel" id="p-regras">
+   <div class="sheet">
+    <div class="sheet-head">
+      <div class="eyebrow">Formato, nota e faltas</div>
+      <h2>Regras</h2>
+    </div>
+
     <section class="blk">
       <div class="sec-head"><div class="eyebrow">Inegociável</div><h2>Como toda entrega precisa chegar</h2></div>
       <div class="split">
@@ -923,10 +1099,17 @@
       <div class="sec-head"><div class="eyebrow">Ciclo</div><h2>Como o feedback funciona</h2></div>
       <p class="lede">Individual e personalizado, publicado no próprio portal junto da nota, no campo de envio da atividade. Chega sempre <strong>antes do prazo da entrega seguinte</strong>. Na correção de cada unidade os professores verificam se o feedback anterior foi aplicado. Corrigem Fernando, a Profa. Leila e um terceiro professor a ser apresentado.</p>
     </section>
+  
+   </div>
   </div>
 
-  <!-- ============ ACERVO ============ -->
-  <div class="panel" id="p-acervo" role="tabpanel" aria-labelledby="t-acervo">
+  <div class="panel" id="p-acervo">
+   <div class="sheet">
+    <div class="sheet-head">
+      <div class="eyebrow">Material reunido</div>
+      <h2>Acervo</h2>
+    </div>
+
     <section class="blk">
       <div class="sec-head"><div class="eyebrow">O que já está reunido</div><h2>Acervo da central</h2></div>
       <div class="shelf">
@@ -975,9 +1158,12 @@
       <span>60h · 1º trimestre</span>
       <span>Atualizado em 19.08.2026</span>
     </footer>
+  
+   </div>
   </div>
-
-</div>
+    </div><!-- /reader -->
+  </main>
+</div><!-- /shell -->
 
 <dialog id="cal" aria-labelledby="calTitle">
   <div class="cal-head">
@@ -1003,63 +1189,72 @@
 
 <script>
 (function () {
-  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
-  var bar = document.querySelector('.tabbar-inner');
+  var PANELS = Array.prototype.slice.call(document.querySelectorAll('.panel'));
+  var body = document.body;
 
-  function show(id) {
-    tabs.forEach(function (t) {
-      var on = t.id === id;
-      t.setAttribute('aria-selected', on ? 'true' : 'false');
-      var panel = document.getElementById(t.getAttribute('aria-controls'));
-      if (on) panel.setAttribute('data-active', 'true');
-      else panel.removeAttribute('data-active');
-    });
-    var active = document.getElementById(id);
-    if (active && bar) {
-      var l = active.offsetLeft, r = l + active.offsetWidth;
-      if (l < bar.scrollLeft) bar.scrollLeft = l - 14;
-      else if (r > bar.scrollLeft + bar.clientWidth) bar.scrollLeft = r - bar.clientWidth + 14;
-    }
-    try { history.replaceState(null, '', '#' + id.slice(2)); } catch (e) {}
+  function home() {
+    PANELS.forEach(function (p) { p.removeAttribute('data-active'); });
+    body.setAttribute('data-view', 'home');
+    try { history.replaceState(null, '', location.pathname); } catch (e) {}
+    window.scrollTo(0, 0);
   }
 
-  tabs.forEach(function (t) {
-    t.addEventListener('click', function () { show(t.id); window.scrollTo(0, 0); });
-    t.addEventListener('keydown', function (ev) {
-      var i = tabs.indexOf(t);
-      var next = ev.key === 'ArrowRight' ? i + 1 : ev.key === 'ArrowLeft' ? i - 1 : -1;
-      if (next < 0 || next >= tabs.length) return;
-      ev.preventDefault();
-      tabs[next].focus();
-      show(tabs[next].id);
-    });
-  });
+  function open(tabId) {
+    var panelId = 'p-' + tabId.slice(2);
+    var panel = document.getElementById(panelId);
+    if (!panel) return;
+    PANELS.forEach(function (p) { p.removeAttribute('data-active'); });
+    panel.setAttribute('data-active', 'true');
+    body.setAttribute('data-view', 'section');
+    try { history.replaceState(null, '', '#' + tabId.slice(2)); } catch (e) {}
+    window.scrollTo(0, 0);
+  }
 
   document.querySelectorAll('[data-go]').forEach(function (el) {
-    el.addEventListener('click', function () {
-      show(el.getAttribute('data-go'));
-      window.scrollTo(0, 0);
-    });
+    el.addEventListener('click', function () { open(el.getAttribute('data-go')); });
   });
 
-  var hash = location.hash.replace('#', '');
-  if (hash && document.getElementById('t-' + hash)) show('t-' + hash);
+  document.getElementById('back').addEventListener('click', home);
 
+  document.addEventListener('keydown', function (ev) {
+    if (ev.key === 'Escape' && body.getAttribute('data-view') === 'section') {
+      var dlg = document.getElementById('cal');
+      if (!dlg || !dlg.open) home();
+    }
+  });
+
+  /* contagem regressiva até a UN 01 */
+  (function () {
+    var alvo = new Date(2026, 7, 21, 23, 59, 59);
+    var dias = Math.ceil((alvo - new Date()) / 86400000);
+    var el = document.getElementById('railCount');
+    if (!el) return;
+    if (dias > 1) el.textContent = dias + ' dias';
+    else if (dias === 1) el.textContent = '1 dia';
+    else if (dias === 0) el.textContent = 'hoje';
+    else { el.textContent = 'encerrada'; el.parentNode.querySelector('span').textContent = 'entrega da UN 01'; }
+  })();
+
+  /* montador de metodologia */
   var sentence = document.getElementById('sentence');
   var defaults = { natureza: '[natureza]', abordagem: '[abordagem]', objetivo: '[objetivo]', metodo: '[método]', coleta: '[técnica]' };
-  document.getElementById('axes').addEventListener('click', function (ev) {
-    var chip = ev.target.closest('.chip');
-    if (!chip) return;
-    var axis = chip.closest('.axis');
-    var key = axis.getAttribute('data-axis');
-    var wasOn = chip.getAttribute('aria-pressed') === 'true';
-    axis.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
-    if (!wasOn) chip.setAttribute('aria-pressed', 'true');
-    var slot = sentence.querySelector('[data-slot="' + key + '"]');
-    if (wasOn) { slot.textContent = defaults[key]; slot.className = 'blank'; }
-    else { slot.textContent = chip.textContent; slot.className = 'filled'; }
-  });
+  var axes = document.getElementById('axes');
+  if (axes) {
+    axes.addEventListener('click', function (ev) {
+      var chip = ev.target.closest('.chip');
+      if (!chip) return;
+      var axis = chip.closest('.axis');
+      var key = axis.getAttribute('data-axis');
+      var wasOn = chip.getAttribute('aria-pressed') === 'true';
+      axis.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+      if (!wasOn) chip.setAttribute('aria-pressed', 'true');
+      var slot = sentence.querySelector('[data-slot="' + key + '"]');
+      if (wasOn) { slot.textContent = defaults[key]; slot.className = 'blank'; }
+      else { slot.textContent = chip.textContent; slot.className = 'filled'; }
+    });
+  }
 
+  /* calendário */
   var PHASES = [
     { cls: 'p1', from: '2026-08-13', to: '2026-08-21', name: 'UN 01 · Tema' },
     { cls: 'p2', from: '2026-08-22', to: '2026-09-05', name: 'UN 02 · Problema, objetivos e justificativa' },
@@ -1171,9 +1366,16 @@
   });
 
   var dlg = document.getElementById('cal');
-  document.getElementById('openCal').addEventListener('click', function () { dlg.showModal(); });
+  document.querySelectorAll('[data-cal]').forEach(function (el) {
+    el.addEventListener('click', function () { dlg.showModal(); });
+  });
   document.getElementById('closeCal').addEventListener('click', function () { dlg.close(); });
   dlg.addEventListener('click', function (ev) { if (ev.target === dlg) dlg.close(); });
+
+  /* estado inicial a partir do hash */
+  var hash = location.hash.replace('#', '');
+  if (hash && document.getElementById('p-' + hash)) open('t-' + hash);
+  else body.setAttribute('data-view', 'home');
 })();
 </script>
 
