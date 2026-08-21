@@ -42,6 +42,7 @@
 ### 📝 02 — Projeto de Pesquisa
 - [**UN 01 — instruções da Atividade 1**](02-Projeto-de-Pesquisa/UN01_instrucoes.md) ⏰ *entrega até 21.08*
 - [**UN 02 — instruções da Atividade 2**](02-Projeto-de-Pesquisa/UN02_instrucoes.md) *entrega até 05.09 — cumulativa, inclui o TR.1*
+- [**Os quatro casos e o orçamento de páginas**](02-Projeto-de-Pesquisa/casos-e-orcamento-de-paginas.md) — decisão de 20.08, fragilidades conhecidas e a conta de páginas do artigo
 - [**Estrutura do projeto**](02-Projeto-de-Pesquisa/estrutura-do-projeto.md) — sumário, mapa unidade→seção, modelos ABNT, cronograma
 
 ### 🎓 03 — Projeto Final
