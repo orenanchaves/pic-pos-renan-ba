@@ -1,6 +1,7 @@
 # Tema — UN 01
 
-**Entrega: 21.08.2026 · Documento pronto:** `PIC-Pos_UN01_Tema_Renan-Vieira-Chaves.docx`
+**✅ ENTREGUE em 21.08.2026, 00h58** — 22h56 antes do vencimento (21.08, 23h55).
+Arquivo: `25119155_Renan-Vieira-Chaves_PIC-Pos_UN01_Tema.pdf` · Status: *Enviado para avaliação*
 Renan Vieira Chaves · Pós-graduação em **Design Digital e Novas Mídias**
 
 > ⚠️ **O tema mudou.** A primeira formulação (hotéis de luxo com Chaves Michelin, discutida
@@ -107,11 +108,25 @@ professor foi explícito: **o título se define no fim do semestre**. Trocar dep
 **Confirmar:** o curso na capa está como *Pós-Graduação em Design Digital e Novas Mídias*.
 Se a nomenclatura oficial trouxer alguma variação, ajustar na capa e na folha de rosto.
 
-## Antes de enviar
+## Como foi entregue
 
-- [ ] Preencher o RA (capa e folha de rosto)
-- [ ] Conferir a grafia oficial do nome do curso
-- [ ] Decidir se apara o parágrafo para caber em 15 linhas
-- [ ] Apagar os marcadores `[Unidade 2 — ...]` se preferir entregar só com o tema
-- [ ] Exportar em PDF
-- [ ] Moodle → Unidade 1 → Atividade 1 → Adicionar envio → Salvar e enviar
+- [x] RA 25119155 na capa e na folha de rosto
+- [x] Curso: Design Digital e Novas Mídias
+- [x] Parágrafo em **15 linhas**, dentro das 5 a 15 pedidas
+- [x] Sumário lista só as seções que existem, com as referências renumeradas para 2
+- [x] Citação de Przybylski et al. (2013) para o conceito de *fear of missing out*
+- [x] Arial 12 · entrelinha 1,5 · justificado · margens ABNT · PDF
+- [x] Enviado pelo Moodle
+
+**Pendência menor para as próximas entregas:** a ABNT (NBR 6024) não usa ponto depois do
+indicativo de seção — `1 INTRODUÇÃO`, não `1. INTRODUÇÃO`. O sumário está sem ponto e o
+corpo com; vale uniformizar na UN 02.
+
+## O que vem agora
+
+| Quando | O quê |
+|---|---|
+| 22.08 | Abre a UN 02 |
+| **24.08, segunda, 19h** | 2º plantão — problema, objetivos e justificativa |
+| até 05.09 | Entrega da UN 02, cumulativa: reabre o mesmo arquivo |
+| antes de 05.09 | Chega o feedback da UN 01 — comparar com as três fragilidades registradas |
