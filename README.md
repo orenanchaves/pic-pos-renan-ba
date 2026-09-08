@@ -14,8 +14,8 @@
 | Item | Situação |
 |---|---|
 | Semestre | 2026.2 — turma **20262.1T** · 60h · 1º trimestre |
-| Etapa vigente *(21/08/2026)* | **UN 01 entregue ✅** · UN 02 abre em 22.08 |
-| ⏰ Próxima entrega | **UN 02 até 05.09.2026** — problema, objetivos e justificativa |
+| Etapa vigente *(08/09/2026)* | **UN 01 e UN 02 entregues ✅** · UN 03 em curso |
+| ⏰ Próxima entrega | **UN 03 até 20.09.2026** — referencial teórico |
 | Próximo encontro | **2º Encontro — 24.08.2026 (segunda), 19h–20h** |
 | Encontros realizados | 1º — 18.08.2026 ✅ *(gravação transcrita, notas completas)* |
 | Docente | Profa. Dra. Leila Rabello de Oliveira |
