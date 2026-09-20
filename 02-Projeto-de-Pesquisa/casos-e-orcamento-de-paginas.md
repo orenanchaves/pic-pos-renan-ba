@@ -115,3 +115,33 @@ Ele é a espinha do trabalho, não uma coluna da tabela.
 | UN 04, até 06.10 | Fixar os três eixos na metodologia; registrar como as interações foram documentadas |
 | **21.10** | **Última data para trocar caso. Depois disso o tema trava** |
 | Projeto final, até 27.11 | Mirar em 20 páginas, não em 15 |
+
+---
+
+## Decisão: modelo 7 — artigo científico *(20.09.2026)*
+
+O projeto final será entregue no **modelo 7, Artigo científico (15 a 20 páginas)**, um dos
+oito arquivos da pasta "Estrutura do Projeto Final", na Unidade 6 do Moodle.
+
+**Por quê:**
+
+| Modelo | Por que não |
+|---|---|
+| 8 — Estudo de caso | Admite **um objeto, no máximo dois**. A pesquisa compara quatro |
+| 1, 2, 4 e 5 — Produto, viabilidade, técnico | Pressupõem **desenvolver** algo. A pesquisa analisa serviços que já existem |
+| 3 — Autoral / artístico | Sem relação com o recorte |
+| 6 — Paper (6 a 10 páginas) | Curto demais: só a parte fixa consome 13,5 páginas |
+
+**Consequências:**
+
+- **Mirar nas 20 páginas**, o teto do modelo. Com 15, sobra 1,5 página para a análise.
+- **Quatro casos × três eixos** = 12 blocos de ~300 palavras. Os três eixos já são os três
+  objetivos específicos: arquitetura da informação, carga cognitiva e linguagem de interface.
+- **O OND entra na seção de implicações**, como aplicação do que a comparação mostrar, e não
+  como objeto. A posição do pesquisador — sócio de uma agência registrada no Cadastur desde
+  11.09.2026, que vende viagens — precisa ser declarada na metodologia.
+- **Parte prática é opcional** e não foi escolhida. Se vier a ser, o formato indicado muda
+  para o Paper, e o número de casos teria de cair.
+
+A escolha formal só acontece na Unidade 6 (22.10 a 27.11), mas o cronograma da UN 04 já
+considera este formato.
