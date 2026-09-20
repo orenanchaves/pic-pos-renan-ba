@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Os oito modelos de projeto final do PIC Pós — páginas, perfil e como escolher entre eles.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📐</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300..800;1,400&family=Source+Serif+4:opsz,wght@8..60,400..600&display=swap" rel="stylesheet">
+<title>Modelos do projeto final · PIC Pós</title>
+<style>
+  :root {
+    --paper:#EEEEE9; --card:#FFFFFF;
+    --ink:#14181A; --ink-2:#4A5559; --ink-3:#6B787C;
+    --rule:#D8D8D0;
+    --now:#16513F; --now-ink:#EDF3EF;
+    --sign:#1B44C8; --sign-soft:#DFE4FA;
+    --deep:#182229; --deep-ink:#E7ECEE;
+    --s1:#E3E0D4; --s2:#D9DACE; --s3:#CDD4CB; --s4:#BECCC3;
+    --warn:#7C4A12; --warn-soft:#F1E6D5;
+    --serif:"Source Serif 4",Georgia,serif;
+    --sans:"Public Sans","Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+    --r:14px; --gap:10px;
+  }
+  :root:not([data-theme="light"]) { }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:#101416; --card:#171C1F;
+      --ink:#ECEFEF; --ink-2:#9FAFB3; --ink-3:#8C9DA2;
+      --rule:#262E31;
+      --now:#1C6B52; --now-ink:#EAF4EF;
+      --sign:#3B63E8; --sign-soft:#1B2340;
+      --deep:#0C1113; --deep-ink:#DFE6E8;
+      --s1:#2A2C26; --s2:#2E332C; --s3:#333B33; --s4:#38443B;
+      --warn:#D9A566; --warn-soft:#2B2113;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:#101416; --card:#171C1F;
+    --ink:#ECEFEF; --ink-2:#9FAFB3; --ink-3:#8C9DA2;
+    --rule:#262E31;
+    --now:#1C6B52; --now-ink:#EAF4EF;
+    --sign:#3B63E8; --sign-soft:#1B2340;
+    --deep:#0C1113; --deep-ink:#DFE6E8;
+    --s1:#2A2C26; --s2:#2E332C; --s3:#333B33; --s4:#38443B;
+    --warn:#D9A566; --warn-soft:#2B2113;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); font-size: 16px; line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--sign-soft); color: var(--ink); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 72px; }
+
+  header.top { margin-bottom: 26px; }
+  .eyebrow {
+    font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--ink-3);
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: clamp(2rem, 5.2vw, 3.1rem); line-height: 1.04;
+    letter-spacing: -0.018em; margin: 8px 0 12px;
+  }
+  .lede { color: var(--ink-2); max-width: 62ch; font-size: 1.02rem; }
+  .lede strong { color: var(--ink); font-weight: 600; }
+
+  .facts {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--gap); margin: 22px 0 30px;
+  }
+  .fact { background: var(--card); border-radius: 12px; padding: 13px 16px; min-width: 0; }
+  .fact dt {
+    font-size: 0.6rem; font-weight: 700; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--ink-3);
+  }
+  .fact dd { margin: 2px 0 0; font-size: 1.02rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  h2 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: clamp(1.4rem, 3vw, 1.9rem); letter-spacing: -0.012em;
+    margin: 40px 0 6px;
+  }
+  h2 + p.sub { color: var(--ink-2); margin: 0 0 18px; max-width: 62ch; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: var(--gap); }
+
+  .model {
+    position: relative; background: var(--card); border-radius: var(--r);
+    padding: 20px 21px 22px; min-width: 0;
+    box-shadow: inset 0 0 0 1px rgb(20 24 26 / 0.06);
+  }
+  .model.pick { background: var(--now); color: var(--now-ink); box-shadow: none; grid-column: 1 / -1; }
+  .model.pick .eyebrow, .model.pick .m-when { color: inherit; opacity: 0.94; }
+  .model.pick .m-note { opacity: 0.94; }
+  .model.soft-1 { background: var(--s1); } .model.soft-2 { background: var(--s2); }
+  .model.soft-3 { background: var(--s3); } .model.soft-4 { background: var(--s4); }
+
+  .m-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+  .m-when {
+    font-size: 0.72rem; font-weight: 700; white-space: nowrap;
+    font-variant-numeric: tabular-nums; color: var(--ink-2);
+  }
+  .m-title {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(1.25rem, 2.3vw, 1.6rem); line-height: 1.08;
+    letter-spacing: -0.012em; margin: 9px 0 0;
+  }
+  .m-note { margin: 8px 0 0; font-size: 0.9rem; color: inherit; opacity: 0.86; }
+  .model.pick .m-title { font-size: clamp(1.5rem, 3.4vw, 2.1rem); }
+
+  .rule-list { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--gap); }
+  .rule {
+    background: var(--card); border-radius: 12px; padding: 15px 18px;
+    box-shadow: inset 0 0 0 1px rgb(20 24 26 / 0.06);
+  }
+  .rule .t { font-weight: 700; font-size: 0.95rem; margin-bottom: 3px; }
+  .rule p { margin: 0; color: var(--ink-2); font-size: 0.92rem; }
+  .rule.warn { background: var(--warn-soft); }
+  .rule.warn .t { color: var(--warn); }
+
+  .flow { display: grid; gap: var(--gap); counter-reset: step; }
+  .step {
+    display: grid; grid-template-columns: 34px 1fr; gap: 14px; align-items: start;
+    background: var(--card); border-radius: 12px; padding: 15px 18px;
+    box-shadow: inset 0 0 0 1px rgb(20 24 26 / 0.06);
+  }
+  .step .n {
+    width: 28px; height: 28px; border-radius: 9px; display: grid; place-items: center;
+    background: var(--sign-soft); color: var(--sign);
+    font-size: 0.8rem; font-weight: 800; font-variant-numeric: tabular-nums;
+  }
+  .step .q { font-weight: 650; }
+  .step .a { color: var(--ink-2); font-size: 0.93rem; margin-top: 2px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+  .tablewrap { overflow-x: auto; background: var(--card); border-radius: 12px; padding: 4px 6px; box-shadow: inset 0 0 0 1px rgb(20 24 26 / 0.06); }
+  th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th {
+    font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-3);
+  }
+  tbody tr:last-child td { border-bottom: 0; }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 600; }
+
+  footer {
+    margin-top: 46px; padding-top: 18px; border-top: 1px solid var(--rule);
+    display: flex; flex-wrap: wrap; gap: 6px 18px;
+    font-size: 0.78rem; color: var(--ink-3);
+  }
+  footer a { color: inherit; }
+  @media (max-width: 560px) {
+    .wrap { padding: 24px 16px 56px; }
+    .step { grid-template-columns: 28px 1fr; gap: 11px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="eyebrow">PIC Pós · Unidade 6 · nota 4,0</div>
+    <h1>Os oito modelos do projeto final</h1>
+    <p class="lede">A estrutura do <strong>projeto de pesquisa</strong> é a mesma para todos. Já o <strong>projeto final</strong> cada um escolhe, e a escolha depende de duas coisas: o tamanho do recorte e se há entrega prática. Os arquivos estão no Moodle, na Unidade 6, pasta “Estrutura do Projeto Final”.</p>
+  </header>
+
+  <dl class="facts">
+    <div class="fact"><dt>Janela</dt><dd>22.10 – 27.11</dd></div>
+    <div class="fact"><dt>Nota</dt><dd>4,0</dd></div>
+    <div class="fact"><dt>Frequências</dt><dd>6</dd></div>
+    <div class="fact"><dt>Plantão</dt><dd>23.10</dd></div>
+    <div class="fact"><dt>Banca</dt><dd>não há</dd></div>
+  </dl>
+
+  <h2>Os modelos</h2>
+  <p class="sub">São oito arquivos — o modelo 3 aparece duplicado, então na prática são sete formatos.</p>
+
+  <div class="grid">
+    <article class="model pick">
+      <div class="m-top">
+        <span class="eyebrow">Modelo 7 · mais comum em pesquisa comparativa</span>
+        <span class="m-when">15–20 páginas</span>
+      </div>
+      <h3 class="m-title">Artigo científico</h3>
+      <p class="m-note">Mais fôlego teórico: mais autores, mais referências e um recorte que comporta vários objetos em comparação. É o formato que aceita três ou quatro casos analisados lado a lado. Quem escolhe este deve mirar no teto de 20 páginas — a parte fixa do texto já consome cerca de 13,5.</p>
+    </article>
+
+    <article class="model soft-1">
+      <div class="m-top"><span class="eyebrow">Modelo 6</span><span class="m-when">6–10 páginas</span></div>
+      <h3 class="m-title">Paper</h3>
+      <p class="m-note">Mais objetivo e mais curto. Indicado para quem entrega parte prática — campanha, filme, animação, protótipo —, porque o texto sustenta a prática em vez de carregar sozinho o trabalho.</p>
+    </article>
+
+    <article class="model soft-2">
+      <div class="m-top"><span class="eyebrow">Modelo 8</span><span class="m-when">15–20 páginas</span></div>
+      <h3 class="m-title">Estudo de caso</h3>
+      <p class="m-note">Muito específico: <strong>um objeto</strong>, no máximo dois em comparação. Vai fundo em vez de largo.</p>
+    </article>
+
+    <article class="model soft-3">
+      <div class="m-top"><span class="eyebrow">Modelo 1</span><span class="m-when">15–20 páginas</span></div>
+      <h3 class="m-title">Setor, empresa, produto ou serviço</h3>
+      <p class="m-note">Para desenvolver um negócio, um serviço ou uma marca. Inclui desenvolvimento de identidade.</p>
+    </article>
+
+    <article class="model soft-4">
+      <div class="m-top"><span class="eyebrow">Modelo 2</span><span class="m-when">15–20 páginas</span></div>
+      <h3 class="m-title">Estudo de viabilidade</h3>
+      <p class="m-note">Para demonstrar que algo é exequível — técnica, econômica ou operacionalmente.</p>
+    </article>
+
+    <article class="model">
+      <div class="m-top"><span class="eyebrow">Modelos 4 e 5</span><span class="m-when">15–20 páginas</span></div>
+      <h3 class="m-title">Projeto técnico</h3>
+      <p class="m-note">Duas variações do mesmo formato. Para quem vai projetar e documentar uma solução técnica.</p>
+    </article>
+
+    <article class="model">
+      <div class="m-top"><span class="eyebrow">Modelo 3</span><span class="m-when">15–20 páginas</span></div>
+      <h3 class="m-title">Projeto autoral / artístico</h3>
+      <p class="m-note">Obra própria acompanhada da fundamentação que a explica e a situa.</p>
+    </article>
+  </div>
+
+  <h2>Como escolher</h2>
+  <p class="sub">Quatro perguntas, nesta ordem. A primeira que responder “sim” já decide.</p>
+
+  <div class="flow">
+    <div class="step">
+      <span class="n">1</span>
+      <div>
+        <div class="q">Você vai entregar algo além do texto?</div>
+        <div class="a">Se sim, o texto encolhe: <strong>Paper</strong>. A prática nunca vai sozinha — ela sempre vem acompanhada do texto que a descreve e fundamenta.</div>
+      </div>
+    </div>
+    <div class="step">
+      <span class="n">2</span>
+      <div>
+        <div class="q">Seu objeto é um só?</div>
+        <div class="a">Um objeto, ou no máximo dois em comparação: <strong>Estudo de caso</strong>. Três ou mais: ele deixa de servir.</div>
+      </div>
+    </div>
+    <div class="step">
+      <span class="n">3</span>
+      <div>
+        <div class="q">Você vai criar, e não analisar?</div>
+        <div class="a">Um produto ou marca: <strong>Setor, empresa, produto ou serviço</strong>. Uma solução técnica: <strong>Projeto técnico</strong>. Provar que dá pé: <strong>Estudo de viabilidade</strong>. Uma obra: <strong>Projeto autoral</strong>.</div>
+      </div>
+    </div>
+    <div class="step">
+      <span class="n">4</span>
+      <div>
+        <div class="q">Sobrou analisar vários objetos com base teórica?</div>
+        <div class="a"><strong>Artigo científico</strong>. É o único formato que comporta vários objetos com o fôlego teórico que a comparação exige.</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Regras que valem para todos</h2>
+  <ul class="rule-list">
+    <li class="rule">
+      <div class="t">Parte prática é opcional, mas nunca sozinha</div>
+      <p>Dá para entregar só texto. Não dá para entregar só prática. Havendo prática, ela corre em paralelo e é entregue no final, com o texto que a fundamenta.</p>
+    </li>
+    <li class="rule">
+      <div class="t">Não há apresentação nem banca</div>
+      <p>É só entrega. O que vale é o documento.</p>
+    </li>
+    <li class="rule">
+      <div class="t">O projeto final é público; o de pesquisa, não</div>
+      <p>O projeto de pesquisa fica entre professores e aluno. O projeto final vai para o repositório da Belas Artes e é o que pode ser submetido a revistas, congressos e simpósios.</p>
+    </li>
+    <li class="rule warn">
+      <div class="t">A conta de páginas decide mais do que parece</div>
+      <p>Em ABNT — Arial 12, entrelinha 1,5, margens 3/2 —, uma página tem cerca de 550 palavras. Num artigo, a parte fixa (capa, folha de rosto, resumo, abstract, sumário, introdução, referencial, metodologia, considerações finais e referências) consome perto de 13,5 páginas. Num trabalho de 15 páginas sobra 1,5 para a análise; num de 20, sobram 6,5.</p>
+    </li>
+  </ul>
+
+  <h2>Lado a lado</h2>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>Modelo</th><th>Páginas</th><th>Quantos objetos</th><th>Melhor quando</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Paper</td><td class="num">6–10</td><td>1 a 2</td><td>Há entrega prática</td></tr>
+        <tr><td>Artigo científico</td><td class="num">15–20</td><td>vários</td><td>Comparação com base teórica</td></tr>
+        <tr><td>Estudo de caso</td><td class="num">15–20</td><td>1, no máximo 2</td><td>Profundidade em um objeto</td></tr>
+        <tr><td>Setor, empresa, produto ou serviço</td><td class="num">15–20</td><td>1</td><td>Desenvolver negócio ou marca</td></tr>
+        <tr><td>Estudo de viabilidade</td><td class="num">15–20</td><td>1</td><td>Provar exequibilidade</td></tr>
+        <tr><td>Projeto técnico (4 e 5)</td><td class="num">15–20</td><td>1</td><td>Projetar uma solução</td></tr>
+        <tr><td>Projeto autoral / artístico</td><td class="num">15–20</td><td>1</td><td>Obra própria fundamentada</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <span>PIC Pós — Projeto Integrado de Curso · Belas Artes</span>
+    <span>Resumo feito a partir do material da disciplina; os modelos oficiais estão no Moodle</span>
+    <span><a href="../">← Voltar ao mapa</a></span>
+  </footer>
+
+</div>
+</body>
+</html>
