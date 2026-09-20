@@ -14,9 +14,9 @@
 | Item | Situação |
 |---|---|
 | Semestre | 2026.2 — turma **20262.1T** · 60h · 1º trimestre |
-| Etapa vigente *(08/09/2026)* | **UN 01 e UN 02 entregues ✅** · UN 03 em curso |
-| ⏰ Próxima entrega | **UN 03 até 20.09.2026** — referencial teórico |
-| Próximo encontro | **2º Encontro — 24.08.2026 (segunda), 19h–20h** |
+| Etapa vigente *(20/09/2026)* | **UN 01, UN 02 e UN 03 entregues ✅** · UN 04 em curso |
+| ⏰ Próxima entrega | **UN 04 até 06.10.2026** — metodologia, cronograma e referências |
+| Próximo encontro | **4º Encontro — 23.09.2026 (quarta), 19h–20h** — metodologia |
 | Encontros realizados | 1º — 18.08.2026 ✅ *(gravação transcrita, notas completas)* |
 | Docente | Profa. Dra. Leila Rabello de Oliveira |
 | Mediador / tutor | Prof. Fernando Invernizzi |
