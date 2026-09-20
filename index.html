@@ -127,8 +127,8 @@
     height: calc(100vh - var(--gap) * 2);
   }
   .rail-top { display: flex; flex-direction: column; gap: 4px; }
-  .rail-name { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.01em; }
-  .rail-sub { font-size: 0.74rem; color: var(--ink-3); letter-spacing: 0.02em; }
+  .rail-name { margin: 0; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.01em; }
+  .rail-sub { font-size: 0.74rem; color: var(--ink-2); letter-spacing: 0.02em; }
   .rail-bot { display: flex; flex-direction: column; gap: 14px; }
   .rail-bot p { font-size: 0.79rem; color: var(--ink-2); line-height: 1.5; }
   .rail-stat { display: flex; flex-direction: column; gap: 2px; background: var(--paper); border-radius: 10px; padding: 14px 15px; }
@@ -173,10 +173,10 @@
   .tile:hover { transform: translateY(-2px); filter: brightness(1.03); }
   .tile:focus-visible { outline: 3px solid var(--t-sign); outline-offset: 3px; }
   .tile-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-  .tile-tag { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.72; }
-  .tile-when { font-size: 0.7rem; font-weight: 600; font-variant-numeric: tabular-nums; opacity: 0.72; }
+  .tile-tag { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.94; }
+  .tile-when { font-size: 0.7rem; font-weight: 600; font-variant-numeric: tabular-nums; opacity: 0.94; }
   .tile-label { font-family: var(--serif); font-size: clamp(1.5rem, 2.4vw, 2.2rem); line-height: 1.02; font-weight: 400; letter-spacing: -0.015em; }
-  .tile-note { font-size: 0.76rem; opacity: 0.74; margin-top: 5px; max-width: 34ch; }
+  .tile-note { font-size: 0.76rem; opacity: 0.92; margin-top: 5px; max-width: 34ch; }
 
   .tile.now   { background: var(--t-now);  color: var(--t-now-ink); }
   .tile.sign  { background: var(--t-sign); color: var(--t-sign-ink); }
@@ -297,7 +297,7 @@
 
   /* ---- especificações ---- */
   .specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 5px; }
-  .spec { display: flex; flex-direction: column; gap: 2px; background: var(--paper); border-radius: 10px; padding: 14px 17px; }
+  .spec { margin: 0; display: flex; flex-direction: column; gap: 2px; background: var(--paper); border-radius: 10px; padding: 14px 17px; }
   .spec dt { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); }
   .spec dd { margin: 0; font-size: 0.93rem; }
 
@@ -463,7 +463,7 @@
 
   <aside class="rail">
     <div class="rail-top">
-      <div class="rail-name">PIC Pós — Projeto Integrado de Curso</div>
+      <h1 class="rail-name">PIC Pós — Projeto Integrado de Curso</h1>
       <div class="rail-sub">Belas Artes · Turma 20262.1T</div>
     </div>
     <button class="back" id="back" type="button">← Todas as seções</button>
@@ -779,9 +779,9 @@
           <p class="lede">Seção <strong>2</strong> do documento. Não é resumo de leituras: é o conjunto de autores que dá linguagem ao seu problema — o que já foi escrito sobre o objeto e de que ângulos, e onde a sua leitura se encaixa nessa conversa.</p>
           <p class="lede">É aqui que se cumpre o que o professor disse sobre originalidade: <em>o objeto não precisa ser inédito, mas o viés, os autores e as comparações precisam ser novos</em>.</p>
           <div class="specs">
-            <div class="spec"><dt>Onde buscar</dt><dd>Minha Biblioteca (Belas Artes) · SciELO · Google Acadêmico · EBSCO Host · Latindex · Periódicos Capes · repositórios de universidades federais</dd></div>
-            <div class="spec"><dt>Como citar</dt><dd>ABNT NBR 10520 no texto — direta, indireta e <em>apud</em></dd></div>
-            <div class="spec"><dt>Como referenciar</dt><dd>ABNT NBR 6023 na lista final</dd></div>
+            <dl class="spec"><dt>Onde buscar</dt><dd>Minha Biblioteca (Belas Artes) · SciELO · Google Acadêmico · EBSCO Host · Latindex · Periódicos Capes · repositórios de universidades federais</dd></dl>
+            <dl class="spec"><dt>Como citar</dt><dd>ABNT NBR 10520 no texto — direta, indireta e <em>apud</em></dd></dl>
+            <dl class="spec"><dt>Como referenciar</dt><dd>ABNT NBR 6023 na lista final</dd></dl>
           </div>
         </div>
         <div class="stack">
@@ -1145,14 +1145,14 @@
       <div class="sec-head"><div class="eyebrow">Inegociável</div><h2>Como toda entrega precisa chegar</h2></div>
       <div class="split">
         <dl class="specs">
-          <div class="spec"><dt>Fonte</dt><dd>Arial 12</dd></div>
-          <div class="spec"><dt>Entrelinha</dt><dd>1,5</dd></div>
-          <div class="spec"><dt>Alinhamento</dt><dd>Justificado</dd></div>
-          <div class="spec"><dt>Formato</dt><dd>PDF — exportado do Word</dd></div>
-          <div class="spec"><dt>Envio</dt><dd>Moodle → Unidade → Atividade → Adicionar envio → Salvar e enviar</dd></div>
-          <div class="spec"><dt>Estrutura</dt><dd>ABNT NBR 15287</dd></div>
-          <div class="spec"><dt>Citações</dt><dd>NBR 10520 no texto · NBR 6023 nas referências</dd></div>
-          <div class="spec"><dt>Pessoa verbal</dt><dd>Impessoal (“observou-se”) ou primeira do plural (“nós analisamos”) — nunca “eu”</dd></div>
+          <dl class="spec"><dt>Fonte</dt><dd>Arial 12</dd></dl>
+          <dl class="spec"><dt>Entrelinha</dt><dd>1,5</dd></dl>
+          <dl class="spec"><dt>Alinhamento</dt><dd>Justificado</dd></dl>
+          <dl class="spec"><dt>Formato</dt><dd>PDF — exportado do Word</dd></dl>
+          <dl class="spec"><dt>Envio</dt><dd>Moodle → Unidade → Atividade → Adicionar envio → Salvar e enviar</dd></dl>
+          <dl class="spec"><dt>Estrutura</dt><dd>ABNT NBR 15287</dd></dl>
+          <dl class="spec"><dt>Citações</dt><dd>NBR 10520 no texto · NBR 6023 nas referências</dd></dl>
+          <dl class="spec"><dt>Pessoa verbal</dt><dd>Impessoal (“observou-se”) ou primeira do plural (“nós analisamos”) — nunca “eu”</dd></dl>
         </dl>
         <div class="flags">
           <div class="flag">
@@ -1208,12 +1208,12 @@
       </div>
       <div class="split">
         <dl class="specs">
-          <div class="spec"><dt>UN 01</dt><dd>4 frequências</dd></div>
-          <div class="spec"><dt>UN 02</dt><dd>3 frequências</dd></div>
-          <div class="spec"><dt>UN 03</dt><dd>4 frequências</dd></div>
-          <div class="spec"><dt>UN 04</dt><dd>3 frequências</dd></div>
-          <div class="spec"><dt>Entrega do projeto</dt><dd>6 frequências</dd></div>
-          <div class="spec"><dt>Total</dt><dd>20 — limite de 5 faltas</dd></div>
+          <dl class="spec"><dt>UN 01</dt><dd>4 frequências</dd></dl>
+          <dl class="spec"><dt>UN 02</dt><dd>3 frequências</dd></dl>
+          <dl class="spec"><dt>UN 03</dt><dd>4 frequências</dd></dl>
+          <dl class="spec"><dt>UN 04</dt><dd>3 frequências</dd></dl>
+          <dl class="spec"><dt>Entrega do projeto</dt><dd>6 frequências</dd></dl>
+          <dl class="spec"><dt>Total</dt><dd>20 — limite de 5 faltas</dd></dl>
         </dl>
         <div class="flags">
           <div class="flag">
