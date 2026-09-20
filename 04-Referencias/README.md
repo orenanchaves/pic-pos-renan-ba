@@ -31,6 +31,7 @@
 | `Metodologia, métodos e técnicas de pesquisa.pdf` | Distinção entre metodologia, método e técnica |
 | `Ciência, senso comum e revoluções científicas ressonâncias e paradoxos.pdf` | Epistemologia: ciência × senso comum, paradigmas (Kuhn) |
 | `Criatividade, pesquisa e inovação.pdf` | Criatividade e inovação na pesquisa — ligado à ementa |
+| `Information_Architecture_For_The_Web_And_Beyond_Fourth_Edition.pdf` | **Rosenfeld, Morville & Arango (2015)** — fonte central do referencial (seção 2.4) e do método de análise dos quatro casos. Fichamento em [`fichamento_arquitetura-da-informacao.md`](fichamento_arquitetura-da-informacao.md) |
 
 ---
 
