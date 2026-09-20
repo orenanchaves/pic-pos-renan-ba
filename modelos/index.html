@@ -149,6 +149,30 @@
   tbody tr:last-child td { border-bottom: 0; }
   td.num { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 600; }
 
+
+  details.det {
+    margin-top: 12px; border-top: 1px solid rgb(20 24 26 / 0.10); padding-top: 10px;
+  }
+  details.det summary {
+    cursor: pointer; list-style: none; display: flex; align-items: center; gap: 7px;
+    font-size: 0.74rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: inherit; opacity: 0.8;
+  }
+  details.det summary::-webkit-details-marker { display: none; }
+  details.det summary::after { content: "+"; font-size: 1rem; line-height: 1; opacity: 0.7; }
+  details.det[open] summary::after { content: "–"; }
+  details.det summary:focus-visible { outline: 3px solid var(--sign); outline-offset: 3px; border-radius: 6px; }
+  details.det .body { margin-top: 10px; font-size: 0.88rem; }
+  details.det ol, details.det ul { margin: 0; padding-left: 18px; }
+  details.det li { margin-bottom: 7px; }
+  details.det li b { font-weight: 700; }
+  details.det .spec-line {
+    margin-top: 10px; padding-top: 9px; border-top: 1px dashed rgb(20 24 26 / 0.14);
+    font-size: 0.82rem; opacity: 0.86;
+  }
+  .model.pick details.det { border-top-color: rgb(255 255 255 / 0.22); }
+  .model.pick details.det .spec-line { border-top-color: rgb(255 255 255 / 0.22); }
+
   footer {
     margin-top: 46px; padding-top: 18px; border-top: 1px solid var(--rule);
     display: flex; flex-wrap: wrap; gap: 6px 18px;
@@ -188,43 +212,64 @@
         <span class="m-when">15–20 páginas</span>
       </div>
       <h3 class="m-title">Artigo científico</h3>
-      <p class="m-note">Mais fôlego teórico: mais autores, mais referências e um recorte que comporta vários objetos em comparação. É o formato que aceita três ou quatro casos analisados lado a lado. Quem escolhe este deve mirar no teto de 20 páginas — a parte fixa do texto já consome cerca de 13,5.</p>
+      <p class="m-note">Mais fôlego teórico: mais autores, mais referências e um recorte que comporta vários objetos em comparação. É o formato que aceita três ou quatro casos analisados lado a lado. É o único dos oito que exige <b>abstract em inglês</b>.</p>
+      <details class="det"><summary>Ver a estrutura</summary>
+        <div class="body"><ol><li><b>Título</b> e <b>autor</b>, com nota de rodapé: curso, breve currículo e e-mail</li><li><b>Resumo</b> — NBR 6028: de 100 a 250 palavras, parágrafo único, frases afirmativas e não tópicos, verbo na voz ativa e na terceira pessoa do singular. A primeira frase explica o tema; depois vêm objetivo, método, resultados e conclusões</li><li><b>Palavras-chave</b> — até cinco, separadas e finalizadas por ponto</li><li><b>Abstract</b> e <b>keywords</b> — obrigatórios, versão do resumo em inglês</li><li><b>Introdução</b> — delimitação do assunto, objetivos, problema de pesquisa e hipóteses, se houver. Não repetir nem parafrasear o resumo</li><li><b>Revisão de literatura</b> — com título próprio, à escolha do autor</li><li><b>Desenvolvimento</b> — as seções de análise, numeradas conforme a NBR 6024</li><li><b>Considerações finais</b> — conclusões correspondentes aos objetivos e às hipóteses</li><li><b>Referências</b> — NBR 6023</li></ol><div class="spec-line"><b>Formatação:</b> Arial 12 · espaçamento <b>simples</b> · margens de <b>2 cm</b> nos quatro lados · páginas pré-textuais contadas mas não numeradas, com a numeração começando na introdução, no canto superior direito · citações pela NBR 10520 · siglas por extenso na primeira aparição · <b>15 a 20 páginas</b></div></div>
+      </details>
     </article>
 
     <article class="model soft-1">
       <div class="m-top"><span class="eyebrow">Modelo 6</span><span class="m-when">6–10 páginas</span></div>
       <h3 class="m-title">Paper</h3>
       <p class="m-note">Mais objetivo e mais curto. Indicado para quem entrega parte prática — campanha, filme, animação, protótipo —, porque o texto sustenta a prática em vez de carregar sozinho o trabalho.</p>
+      <details class="det"><summary>Ver a estrutura</summary>
+        <div class="body"><ol><li><b>Título</b> e <b>autor</b>, com nota de rodapé: curso, breve currículo e e-mail</li><li><b>Resumo</b> — NBR 6028, mesmas regras do artigo: 100 a 250 palavras, parágrafo único, voz ativa, terceira pessoa do singular</li><li><b>Palavras-chave</b> — até cinco, separadas por ponto e vírgula</li><li><b>Introdução</b> — delimitação do assunto, objetivo do paper e problema de pesquisa</li><li><b>Revisão de literatura</b></li><li><b>Considerações finais</b> — conclusões correspondentes aos objetivos, e até uma solução</li><li><b>Referências</b> — NBR 6023</li></ol><div class="spec-line"><b>Formatação:</b> Arial 12 · numeração progressiva pela NBR 6024 · citações pela NBR 10520 · <b>mínimo de 6 páginas</b> · sem abstract obrigatório</div></div>
+      </details>
     </article>
 
     <article class="model soft-2">
       <div class="m-top"><span class="eyebrow">Modelo 8</span><span class="m-when">15–20 páginas</span></div>
       <h3 class="m-title">Estudo de caso</h3>
       <p class="m-note">Muito específico: <strong>um objeto</strong>, no máximo dois em comparação. Vai fundo em vez de largo.</p>
+      <details class="det"><summary>Ver a estrutura</summary>
+        <div class="body"><ol><li><b>1 Introdução</b> — define o problema, explica os parâmetros e as limitações da situação, os objetivos, a relevância e a metodologia de análise</li><li><b>2 Visão geral / análise</b> — onde, quando e por quê (os 5W2H); atores e organizações envolvidos; questões profissionais e técnicas; cenário, mercado e urgência</li><li><b>3 Fundamentação teórica</b> — o objeto de estudo e as áreas correlatas</li><li><b>4 Relato da situação</b> — as ações, as declarações dos atores e suas relações, a cronologia, o local ou segmento, análise SWOT</li><li><b>5 Problema do caso</b> — objetivo, processo e possível solução. Um ou dois problemas, apresentados com clareza</li><li><b>6 Conclusões</b></li><li><b>Referências</b></li></ol></div>
+      </details>
     </article>
 
     <article class="model soft-3">
       <div class="m-top"><span class="eyebrow">Modelo 1</span><span class="m-when">15–20 páginas</span></div>
       <h3 class="m-title">Setor, empresa, produto ou serviço</h3>
       <p class="m-note">Para desenvolver um negócio, um serviço ou uma marca. Inclui desenvolvimento de identidade.</p>
+      <details class="det"><summary>Ver a estrutura</summary>
+        <div class="body"><ol><li><b>1 Introdução</b> — visão geral, contextualização e motivadores</li><li><b>2 Setor, empresa, produto, serviço ou projeto</b></li><li><b>3 Diagnóstico</b></li><li><b>4 Fundamentação teórica</b></li><li><b>5 Proposta / cenários futuros</b></li><li><b>6 Considerações finais</b></li><li><b>Referências</b></li></ol><div class="spec-line">O sumário deve ser personalizado conforme o tema.</div></div>
+      </details>
     </article>
 
     <article class="model soft-4">
       <div class="m-top"><span class="eyebrow">Modelo 2</span><span class="m-when">15–20 páginas</span></div>
       <h3 class="m-title">Estudo de viabilidade</h3>
       <p class="m-note">Para demonstrar que algo é exequível — técnica, econômica ou operacionalmente.</p>
+      <details class="det"><summary>Ver a estrutura</summary>
+        <div class="body"><ol><li><b>Sumário executivo</b> — resumo conciso das conclusões, visão geral, objetivos e recomendações</li><li><b>Referencial teórico</b></li><li><b>Descrição do projeto</b> — o negócio, produto ou serviço proposto; objetivos e metas</li><li><b>Análise de mercado</b> — demanda, tendências e oportunidades; concorrência e posicionamento; segmentação e público-alvo</li><li><b>Aspectos técnicos e operacionais</b> — requisitos, localização, instalações, tecnologia, processos e logística</li><li><b>Plano de marketing</b> — estratégias de marketing e vendas; preço, promoção, distribuição e proposta de valor</li><li><b>Análise financeira</b> — fluxo de caixa, balanço, demonstração de resultados, custos, rentabilidade, ponto de equilíbrio e retorno do investimento</li><li><b>Análise de riscos</b> — riscos potenciais e estratégias de mitigação</li><li><b>Aspectos legais e regulatórios</b> — licenças, autorizações e conformidade</li><li><b>Conclusões e recomendações</b></li><li><b>Anexos</b>, se necessário — dados, gráficos e tabelas de apoio</li></ol></div>
+      </details>
     </article>
 
     <article class="model">
       <div class="m-top"><span class="eyebrow">Modelos 4 e 5</span><span class="m-when">15–20 páginas</span></div>
       <h3 class="m-title">Projeto técnico</h3>
       <p class="m-note">Duas variações do mesmo formato. Para quem vai projetar e documentar uma solução técnica.</p>
+      <details class="det"><summary>Ver a estrutura</summary>
+        <div class="body"><ol><li><b>Versão 1 — Resumo</b>, seguido de 1 Introdução (contexto do problema, objetivos, relevância); 2 Revisão da literatura, apontando as lacunas que o projeto preenche; 3 Metodologia (métodos, técnicas, ferramentas, etapas); 4 Desenvolvimento do projeto, com diagramas e fluxogramas e os desafios enfrentados; 5 Resultados, com tabelas e figuras; 6 Discussão, com análise crítica, comparação com estudos anteriores e limitações; 7 Conclusão; Referências; Anexos, como códigos, dados brutos e especificações</li><li><b>Versão 2 — Objetivo</b>; referencial teórico; especificações técnicas (materiais, equipamentos, normas e regulamentos); desenhos e diagramas; cronograma com prazos e marcos; orçamento; análise de riscos; metodologia de execução; referências</li></ol><div class="spec-line">São dois arquivos diferentes. A versão 1 é acadêmica, no formato de relatório de pesquisa; a versão 2 é um documento de projeto, mais próximo do que se entrega em engenharia ou arquitetura.</div></div>
+      </details>
     </article>
 
     <article class="model">
       <div class="m-top"><span class="eyebrow">Modelo 3</span><span class="m-when">15–20 páginas</span></div>
       <h3 class="m-title">Projeto autoral / artístico</h3>
       <p class="m-note">Obra própria acompanhada da fundamentação que a explica e a situa.</p>
+      <details class="det"><summary>Ver a estrutura</summary>
+        <div class="body"><ol><li><b>Resumo</b> — objetivo, abordagem artística e principais conclusões</li><li><b>Introdução</b> — apresentação e contexto, motivação, objetivos e relevância artística</li><li><b>Revisão da literatura / contexto artístico</b> — obras, estilos e movimentos que influenciaram o projeto, e onde ele se posiciona hoje</li><li><b>Conceito e desenvolvimento criativo</b> — a visão criativa e o caminho da ideia inicial até a execução</li><li><b>Metodologia e técnicas</b> — materiais, processos, ferramentas e tecnologias</li><li><b>Análise e interpretação</b> — elementos visuais, narrativos e simbólicos; temas explorados</li><li><b>Resultados e impacto</b> — exibições, prêmios, recepção do público e da crítica</li><li><b>Conclusão</b> — contribuições, reflexão sobre o processo e direções futuras</li><li><b>Referências</b> e <b>anexos</b> — imagens, storyboards, roteiro e esboços</li></ol></div>
+      </details>
     </article>
   </div>
 
@@ -277,8 +322,12 @@
       <p>O projeto de pesquisa fica entre professores e aluno. O projeto final vai para o repositório da Belas Artes e é o que pode ser submetido a revistas, congressos e simpósios.</p>
     </li>
     <li class="rule warn">
+      <div class="t">O projeto final não tem a formatação do projeto de pesquisa</div>
+      <p>O projeto de pesquisa usa entrelinha 1,5 e margens de 3 cm à esquerda e no topo. O <b>artigo científico</b> pede <b>espaçamento simples</b> e <b>margens de 2 cm nos quatro lados</b> — o que muda bastante o que cabe em cada página. Conferir o modelo antes de estimar a extensão.</p>
+    </li>
+    <li class="rule">
       <div class="t">A conta de páginas decide mais do que parece</div>
-      <p>Em ABNT — Arial 12, entrelinha 1,5, margens 3/2 —, uma página tem cerca de 550 palavras. Num artigo, a parte fixa (capa, folha de rosto, resumo, abstract, sumário, introdução, referencial, metodologia, considerações finais e referências) consome perto de 13,5 páginas. Num trabalho de 15 páginas sobra 1,5 para a análise; num de 20, sobram 6,5.</p>
+      <p>Com Arial 12 e espaçamento simples, uma página comporta por volta de 800 palavras — contra cerca de 550 na formatação do projeto de pesquisa. Ainda assim, a parte fixa (título, resumo, abstract, introdução, revisão de literatura, considerações finais e referências) consome boa parte do texto. Vale escrever a análise primeiro e ajustar o resto ao que sobrar.</p>
     </li>
   </ul>
 
