@@ -14,10 +14,10 @@
 | Item | Situação |
 |---|---|
 | Semestre | 2026.2 — turma **20262.1T** · 60h · 1º trimestre |
-| Etapa vigente *(20/09/2026)* | **UN 01, UN 02 e UN 03 entregues ✅** · UN 04 em curso |
-| ⏰ Próxima entrega | **UN 04 até 06.10.2026** — metodologia, cronograma e referências |
-| Próximo encontro | **4º Encontro — 23.09.2026 (quarta), 19h–20h** — metodologia |
-| Encontros realizados | 1º — 18.08.2026 ✅ *(gravação transcrita, notas completas)* |
+| Etapa vigente *(06/10/2026)* | **As quatro unidades entregues ✅** · em curso: **a entrega do projeto completo** |
+| ⏰ Próxima entrega | **Projeto de Pesquisa completo até 21.10.2026** — vale 2,0, o dobro de cada unidade · *última data para trocar caso* |
+| Próximo encontro | **5º Encontro — 09.10.2026 (sexta), 19h–20h** |
+| Encontros realizados | 1º — 18.08.2026 ✅ *(gravação transcrita, notas completas)* · 2º, 3º e 4º já ocorreram — **sem gravação nem notas aqui** |
 | Docente | Profa. Dra. Leila Rabello de Oliveira |
 | Mediador / tutor | Prof. Fernando Invernizzi |
 
@@ -42,7 +42,8 @@
 ### 📝 02 — Projeto de Pesquisa
 - [**UN 01 — instruções da Atividade 1**](02-Projeto-de-Pesquisa/UN01_instrucoes.md) ⏰ *entrega até 21.08*
 - [**UN 02 — instruções da Atividade 2**](02-Projeto-de-Pesquisa/UN02_instrucoes.md) *entrega até 05.09 — cumulativa, inclui o TR.1*
-- [**Os quatro casos e o orçamento de páginas**](02-Projeto-de-Pesquisa/casos-e-orcamento-de-paginas.md) — decisão de 20.08, fragilidades conhecidas e a conta de páginas do artigo
+- [**UN 04 — entregue em 06.10**](02-Projeto-de-Pesquisa/25119155_Renan-Vieira-Chaves_PIC-Pos_UN04.docx) *(17 páginas, 5.071 palavras)* — acrescenta `3 METODOLOGIA` em cinco subseções, `4 CRONOGRAMA` com quadro e renumera `5 REFERÊNCIAS`, agora com 21 entradas em ordem alfabética
+- [**Os quatro casos e o orçamento de páginas**](02-Projeto-de-Pesquisa/casos-e-orcamento-de-paginas.md) — decisão de 20.08, fragilidades conhecidas e a conta de páginas do artigo *(refeita em 03.10 com a formatação real do modelo 7)*
 - [**Estrutura do projeto**](02-Projeto-de-Pesquisa/estrutura-do-projeto.md) — sumário, mapa unidade→seção, modelos ABNT, cronograma
 
 ### 🎓 03 — Projeto Final
@@ -63,8 +64,8 @@ Nota 2 — o **paper**. Obrigatório para concluir a disciplina **e o curso**. *
 | 13.08 – **21.08** | UN 01 | **Tema** do projeto | 1,0 |
 | 22.08 – 05.09 | UN 02 | **Problema, objetivos e justificativas** | 1,0 |
 | 06.09 – 20.09 | UN 03 | **Referencial teórico** | 1,0 |
-| 21.09 – 06.10 | UN 04 | **Metodologia, cronograma e referências** | 1,0 |
-| 07.10 – 21.10 | **Entrega do Projeto de Pesquisa** | Documento completo | 2,0 |
+| 21.09 – **06.10** ✅ | UN 04 | **Metodologia, cronograma e referências** | 1,0 |
+| 07.10 – **21.10** ⏰ | **Entrega do Projeto de Pesquisa** | Documento completo | 2,0 |
 | 22.10 – 27.11 | **Entrega do Projeto Final** | Paper | 4,0 |
 
 **Disciplina vale 10 pts · média mínima 7 · máximo 5 faltas (de 20 aulas).**
@@ -84,10 +85,10 @@ Todas as fontes citadas — cópia sem citação e trabalho idêntico ao de cole
 | # | Data | Dia | Status |
 |---|---|---|---|
 | 1º | 18.08.2026 | terça | ✅ realizado |
-| 2º | 24.08.2026 | segunda | ⏳ próximo |
-| 3º | 08.09.2026 | terça | |
-| 4º | 23.09.2026 | quarta | |
-| 5º | 09.10.2026 | sexta | |
+| 2º | 24.08.2026 | segunda | ocorrido |
+| 3º | 08.09.2026 | terça | ocorrido |
+| 4º | 23.09.2026 | quarta | ocorrido — era o de metodologia |
+| 5º | 09.10.2026 | sexta | ⏳ próximo |
 | 6º | 23.10.2026 | sexta | |
 
 *(o 1º Encontro foi remarcado de 14.08 para 18.08 — o PDF oficial ainda traz a data antiga)*
@@ -100,8 +101,10 @@ Todas as fontes citadas — cópia sem citação e trabalho idêntico ao de cole
 2. **Pesos do plano de ensino** — a versão 2024.2 traz Projeto de Pesquisa 4 pts / Trabalho final 6 pts, invertido em relação ao calendário 20262.1T.
 3. **Template do projeto** — as versões disponíveis são **2024-2** e **2025-1**. São idênticas em estrutura; muda só o ano da capa e os meses do cronograma. Usar a **2025-1** como base e ajustar para 2026.2 (ago–nov).
 
+4. **Os três feedbacks não chegaram.** TR.1, TR.2 e TR.3 foram entregues e nenhuma devolutiva da Profa. Leila foi recebida. O enunciado do TR.4 pede, em três dos seus quatro itens, "ajustes realizados de acordo com o feedback" de cada um deles. Cobrar e registrar a cobrança no comentário da entrega.
+
 > Canal: **"Fale com seu tutor"** na página da disciplina (chat direto com o Prof. Fernando).
 
 ---
 
-*Última atualização: 19/08/2026*
+*Última atualização: 06/10/2026*

@@ -56,40 +56,48 @@ Dois cuidados se isso for adiante:
 
 ## O orçamento de páginas
 
-Página ABNT (Arial 12, entrelinha 1,5, margens 3/2 cm): **38 linhas, ~550 palavras**.
+> **Refeita em 03.10.2026.** A conta anterior usava a formatação do *projeto de pesquisa*
+> (entrelinha 1,5, margens 3/2 cm, ~550 palavras por página) e previa capa, folha de rosto
+> e sumário. O modelo 7 não tem nenhum dos três e usa **espaçamento simples com margens de
+> 2 cm nos quatro lados**, o que dá **~800 palavras por página**. Os números abaixo já são
+> os certos. A conclusão mudou de lugar: veja o fim desta seção.
 
-O que um artigo científico gasta **fora da análise**:
+Página do modelo 7 (Arial 12, espaçamento simples, margens de 2 cm): **~800 palavras**.
 
-| Parte | Páginas |
-|---|---|
-| Capa + folha de rosto | 2,0 |
-| Resumo + palavras-chave | 0,5 |
-| Abstract + keywords | 0,5 |
-| Sumário | 0,5 |
-| Introdução | 1,5 |
-| Referencial teórico | 4,0 |
-| Metodologia | 1,5 |
-| Considerações finais | 1,5 |
-| Referências | 1,5 |
-| **Subtotal** | **13,5** |
+O modelo 7 começa em título e autor e termina em referências. Não há capa, folha de rosto
+nem sumário. O que ele gasta **fora da análise**:
 
-| Artigo de | Sobra para a análise |
-|---|---|
-| 15 páginas | **1,5 página — 827 palavras.** Não cabe |
-| 20 páginas | 6,5 páginas — 3.585 palavras |
+| Parte | Palavras | Páginas |
+|---|---|---|
+| Título, autor, resumo, palavras-chave, abstract, keywords | ~550 | 1,0 |
+| Introdução | 1.200 | 1,5 |
+| Revisão de literatura *(o texto da UN 03, 3.274 palavras)* | 3.274 | 4,0 |
+| Metodologia *(o texto da UN 04, 1.459 palavras)* | 1.459 | 2,0 |
+| Considerações finais | 1.200 | 1,5 |
+| Referências *(21 entradas)* | — | 1,5 |
+| **Subtotal** | | **11,5** |
 
-> ⚠️ **O artigo tem que mirar nas 20 páginas**, o teto do modelo. Com 15, quatro casos ficam
-> com 200 palavras cada — legenda, não análise.
+| Artigo de | Sobra para a análise | Por bloco, em 12 blocos |
+|---|---|---|
+| 15 páginas | 3,5 páginas — 2.800 palavras | 233 palavras — aperta, mas cabe |
+| 20 páginas | 8,5 páginas — 6.800 palavras | 566 palavras — folgado |
+
+> **O que mudou:** com a formatação certa, 15 páginas deixam de ser impossíveis. A
+> recomendação de **mirar nas 20** continua, mas por outro motivo: não é mais questão de
+> caber, é de ter espaço para argumentar em cada bloco. Com 233 palavras dá para descrever;
+> com 566 dá para comparar.
 
 ### O gargalo é o número de células, não de casos
 
 | Arranjo (em 20 páginas) | Palavras por bloco |
 |---|---|
-| 4 casos × 4 eixos = 16 blocos | 224 — aperta |
-| **4 casos × 3 eixos = 12 blocos** | **299 — confortável** |
-| 3 casos × 3 eixos = 9 blocos | 398 — folgado |
+| 4 casos × 4 eixos = 16 blocos | 425 |
+| **4 casos × 3 eixos = 12 blocos** | **566** |
+| 3 casos × 3 eixos = 9 blocos | 755 |
 
-**Não é preciso cortar caso. É preciso cortar um eixo.**
+Com a conta refeita, nenhum dos três arranjos estoura a página. **O corte do quarto eixo
+deixou de ser uma decisão de orçamento e passou a ser só o que sempre foi de fato: uma
+decisão de método.** O motivo está abaixo, e ele valeria mesmo se houvesse 40 páginas.
 
 ### Qual eixo cortar
 
@@ -112,7 +120,7 @@ Ele é a espinha do trabalho, não uma coluna da tabela.
 |---|---|
 | Feedback da UN 01, até 05.09 | Conferir se o professor aponta as mesmas três fragilidades |
 | UN 02, até 05.09 | O problema tem que ser respondível pelos quatro casos juntos |
-| UN 04, até 06.10 | Fixar os três eixos na metodologia; registrar como as interações foram documentadas |
+| UN 04, até 06.10 | ✅ Feito: os três eixos estão fixados na seção 3.4, e o protocolo de registro na 3.3 |
 | **21.10** | **Última data para trocar caso. Depois disso o tema trava** |
 | Projeto final, até 27.11 | Mirar em 20 páginas, não em 15 |
 
@@ -143,5 +151,6 @@ oito arquivos da pasta "Estrutura do Projeto Final", na Unidade 6 do Moodle.
 - **Parte prática é opcional** e não foi escolhida. Se vier a ser, o formato indicado muda
   para o Paper, e o número de casos teria de cair.
 
-A escolha formal só acontece na Unidade 6 (22.10 a 27.11), mas o cronograma da UN 04 já
-considera este formato.
+A escolha formal só acontece na Unidade 6 (22.10 a 27.11), mas o cronograma entregue na
+UN 04 já considera este formato: a coleta nas interfaces fica em outubro, depois da entrega
+do projeto, e a redação entre outubro e novembro.

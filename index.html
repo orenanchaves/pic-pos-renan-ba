@@ -475,8 +475,8 @@
     <div class="rail-bot">
       <p>Quatro unidades que escrevem, no mesmo arquivo, um projeto de pesquisa. Depois, o artigo que o executa.</p>
       <div class="rail-stat">
-        <b id="railCount">06.10</b>
-        <span>entrega da UN 04</span>
+        <b id="railCount">21.10</b>
+        <span>entrega do projeto</span>
       </div>
     </div>
   </aside>
@@ -484,14 +484,14 @@
   <main>
 
     <div class="bento">
-      <button class="tile now a-now" type="button" data-go="t-un4">
+      <button class="tile now a-now" type="button" data-go="t-entrega">
         <div class="tile-top">
-          <span class="tile-tag"><span class="pulse"></span>Unidade 4 · agora</span>
-          <span class="tile-when">até 06.10</span>
+          <span class="tile-tag"><span class="pulse"></span>Entrega do projeto · agora</span>
+          <span class="tile-when">até 21.10</span>
         </div>
         <div>
-          <div class="tile-label">Metodologia</div>
-          <div class="tile-note">Como a pesquisa vai ser feita, em quanto tempo e com que fontes. O plantão de 23.09 é sobre ela.</div>
+          <div class="tile-label">Projeto completo</div>
+          <div class="tile-note">As quatro unidades viram um documento só, revisado e formatado. Vale 2,0 — o dobro de cada unidade. Depois de 21.10 o tema trava.</div>
         </div>
       </button>
 
@@ -554,12 +554,15 @@
         </div>
       </button>
 
-      <button class="tile s4" type="button" data-go="t-entrega">
+      <button class="tile s4" type="button" data-go="t-un4">
         <div class="tile-top">
-          <span class="tile-tag">Quinta etapa</span>
-          <span class="tile-when">21.10</span>
+          <span class="tile-tag">Unidade 4 · entregue</span>
+          <span class="tile-when">06.10 ✓</span>
         </div>
-        <div><div class="tile-label">Entrega</div></div>
+        <div>
+          <div class="tile-label">Metodologia</div>
+          <div class="tile-note">Cinco subseções, cronograma e as referências em ordem.</div>
+        </div>
       </button>
 
       <button class="tile deep a-wide" type="button" data-go="t-final">
@@ -1092,7 +1095,7 @@
           </div>
           <div class="flag">
             <div class="t">Três feedbacks pendentes</div>
-            <p>UN 01, UN 02 e UN 03 seguem sem retorno até 20.09. O TR.4 cobra os ajustes das três devolutivas, o que é impossível sem elas — por isso o envio registra a ausência em comentário. Vale cobrar pelo chat do tutor.</p>
+            <p>UN 01, UN 02 e UN 03 seguem sem retorno. O TR.4 cobrava, em três dos seus quatro itens, os ajustes dessas devolutivas; a UN 04 foi entregue em 06.10 registrando a ausência em comentário. Se chegarem até 21.10, os ajustes entram na entrega do projeto completo.</p>
           </div>
           <div class="flag good">
             <div class="t">Extensão resolvida</div>
@@ -1366,14 +1369,14 @@
   (function () {
     var hoje = new Date();
     var d0 = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate());
-    var alvo = new Date(2026, 9, 6);
+    var alvo = new Date(2026, 9, 21);
     var dias = Math.round((alvo - d0) / 86400000);
     var el = document.getElementById('railCount');
     if (!el) return;
     if (dias > 1) el.textContent = dias + ' dias';
     else if (dias === 1) el.textContent = '1 dia';
     else if (dias === 0) el.textContent = 'hoje';
-    else { el.textContent = 'encerrada'; el.parentNode.querySelector('span').textContent = 'entrega da UN 04'; }
+    else { el.textContent = 'encerrada'; el.parentNode.querySelector('span').textContent = 'entrega do projeto'; }
   })();
 
   /* montador de metodologia */
